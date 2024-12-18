@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.mutu.tripdiary"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.mutu.tripdiary"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
