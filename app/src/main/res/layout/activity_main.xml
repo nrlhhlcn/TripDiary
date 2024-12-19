@@ -33,13 +33,13 @@
         app:layout_constraintVertical_bias="0.504">
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/loginEmail"
             android:layout_width="260dp"
             android:layout_height="53dp"
             android:ems="10"
             android:hint="Email:"
             android:inputType="textEmailAddress"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintBottom_toTopOf="@+id/loginPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +47,7 @@
             app:layout_constraintVertical_bias="0.644" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/loginPassword"
             android:layout_width="261dp"
             android:layout_height="0dp"
             android:layout_marginBottom="161dp"
@@ -64,16 +64,17 @@
             android:layout_height="37dp"
             android:layout_marginTop="5dp"
             android:text="Sifreyi Goster"
-            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+            app:layout_constraintEnd_toEndOf="@+id/loginPassword"
+            app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Button"
-            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            android:onClick="loginClick"
+            android:text="Giriş Yap"
+            app:layout_constraintStart_toStartOf="@+id/loginPassword"
             app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
         <Button
@@ -81,8 +82,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:onClick="registerClick"
-            android:text="Button"
+            android:onClick="registerClickLogin"
+            android:text="Kayıt Ol"
             app:layout_constraintEnd_toEndOf="@+id/checkBox"
             app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
@@ -92,7 +93,7 @@
             android:layout_height="0dp"
             android:layout_marginTop="25dp"
             android:layout_marginBottom="113dp"
-            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintBottom_toTopOf="@+id/loginPassword"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

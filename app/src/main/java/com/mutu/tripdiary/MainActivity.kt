@@ -3,6 +3,7 @@ package com.mutu.tripdiary
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -22,11 +23,49 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-    }
-    fun registerClick(view: View){
-        val intent= Intent(this@MainActivity,RegisterActivity::class.java)
-        startActivity(intent)
 
+    }
+
+
+    fun loginClick(view: View) {
+        val emailText = binding.loginEmail.text.toString()
+        val passwordText = binding.loginPassword.text.toString()
+
+        val database = this.openOrCreateDatabase("TripDiary", MODE_PRIVATE, null)
+        try {
+
+            database.execSQL(
+                "CREATE TABLE IF NOT EXISTS user(id INTEGER PRIMARY KEY, name VARCHAR, surname VARCHAR, username VARCHAR, email VARCHAR, password VARCHAR)"
+            )
+
+            val cursor = database.rawQuery(
+                "SELECT * FROM user WHERE email = ? AND password = ?",
+                arrayOf(emailText, passwordText)
+            )
+
+            if (cursor.moveToFirst()) {
+                println("48")
+                val intent = Intent(this@MainActivity, AnaSayfa::class.java)
+                startActivity(intent)
+            } else {
+
+                Toast.makeText(this@MainActivity, "Eksik veya hatalı bilgi", Toast.LENGTH_LONG)
+                    .show()
+            }
+
+
+            cursor.close()
+
+
+        } catch (e: Exception) {
+            println("Burda hata ")
+            e.printStackTrace()
+        }
+    }
+
+    fun registerClickLogin(view: View) {
+        val intent = Intent(this@MainActivity, RegisterActivity::class.java)
+        startActivity(intent)
 
     }
 }
