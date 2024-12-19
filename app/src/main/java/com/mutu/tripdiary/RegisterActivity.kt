@@ -1,16 +1,14 @@
 package com.mutu.tripdiary
 
 import android.content.Intent
-import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.mutu.tripdiary.databinding.ActivityMainBinding
 import com.mutu.tripdiary.databinding.ActivityRegisterBinding
+import com.mutu.tripdiary.entities.Users
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
