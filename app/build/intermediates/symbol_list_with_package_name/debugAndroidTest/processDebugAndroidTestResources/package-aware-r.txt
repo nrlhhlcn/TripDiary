@@ -1,0 +1,3 @@
+com.mutu.tripdiary.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

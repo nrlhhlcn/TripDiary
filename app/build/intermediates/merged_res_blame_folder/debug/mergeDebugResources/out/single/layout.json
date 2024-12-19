@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.mutu.tripdiary.app-mergeDebugResources-31:/layout/activity_register.xml",
+        "source": "com.mutu.tripdiary.app-main-34:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.mutu.tripdiary.app-mergeDebugResources-31:/layout/activity_ana_sayfa.xml",
+        "source": "com.mutu.tripdiary.app-main-34:/layout/activity_ana_sayfa.xml"
+    },
+    {
+        "merged": "com.mutu.tripdiary.app-mergeDebugResources-31:/layout/activity_main.xml",
+        "source": "com.mutu.tripdiary.app-main-34:/layout/activity_main.xml"
+    }
+]
