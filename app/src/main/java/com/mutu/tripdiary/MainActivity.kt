@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.mutu.tripdiary.databinding.ActivityMainBinding
+import com.mutu.tripdiary.entities.Trip
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,10 +23,10 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val nuri = Trip("asda","12/10/2024",1321,"aaaa","antep","antep",233)
 
-
+        println( nuri.TripId)
     }
-
 
     fun loginClick(view: View) {
         val emailText = binding.loginEmail.text.toString()

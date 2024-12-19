@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.mutu.tripdiary.databinding.ActivityRegisterBinding
-import com.mutu.tripdiary.entities.Users
+import com.mutu.tripdiary.entities.User
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -29,7 +29,7 @@ class RegisterActivity : AppCompatActivity() {
 
     fun registerClick(view: View) {
         val database = this.openOrCreateDatabase("TripDiary", MODE_PRIVATE, null)
-        val user = Users(
+        val user = User(
             binding.name.text.toString(),
             binding.surname.text.toString(),
             binding.username.text.toString(),

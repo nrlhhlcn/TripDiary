@@ -1,0 +1,6 @@
+com.mutu.tripdiary.test.app-tracing-1.2.0-0 C:\Users\Umutl\.gradle\caches\8.9\transforms\7818abf09245d942e60c31901b6969f5\transformed\tracing-1.2.0\res
+com.mutu.tripdiary.test.app-core-1.6.1-1 C:\Users\Umutl\.gradle\caches\8.9\transforms\d4004a4b3bb34736c32c3c003ea105b2\transformed\core-1.6.1\res
+com.mutu.tripdiary.test.app-androidTest-2 C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\build\generated\res\resValues\androidTest\debug
+com.mutu.tripdiary.test.app-mergeDebugAndroidTestResources-3 C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.mutu.tripdiary.test.app-mergeDebugAndroidTestResources-4 C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.mutu.tripdiary.test.app-debugAndroidTest-5 C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
