@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.mutu.tripdiary.app-mergeDebugResources-31:/layout/activity_ana_sayfa.xml",
+        "source": "com.mutu.tripdiary.app-main-34:/layout/activity_ana_sayfa.xml"
+    },
+    {
+        "merged": "C:\\Users\\nurul\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-31:\\layout\\activity_ana_sayfa.xml",
+        "source": "C:\\Users\\nurul\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-34:\\layout\\activity_ana_sayfa.xml"
+    },
+    {
+        "merged": "C:\\Users\\nurul\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-31:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\nurul\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-34:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nurul\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-31:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\nurul\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-34:\\layout\\activity_register.xml"
+    }
+]
