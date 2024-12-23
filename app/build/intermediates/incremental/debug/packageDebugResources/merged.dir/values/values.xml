@@ -8,8 +8,10 @@
     <color name="specialWhiteBlue">#A3BAD9</color>
     <color name="specialWhiteBrown">#8C765A</color>
     <color name="specialWhiteGreen">#B0D9C1</color>
+    <color name="teal_700">#008080</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">TripDiary</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <style name="Base.Theme.TripDiary" parent="Theme.Material3.DayNight.NoActionBar">
         
         

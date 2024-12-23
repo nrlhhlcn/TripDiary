@@ -1,7 +1,0 @@
-C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\src\main\java\com\mutu\tripdiary\AnaSayfa.kt
-C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\src\main\java\com\mutu\tripdiary\entities\Category.kt
-C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\src\main\java\com\mutu\tripdiary\entities\TripImage.kt
-C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\src\main\java\com\mutu\tripdiary\RegisterActivity.kt
-C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\src\main\java\com\mutu\tripdiary\entities\Trip.kt
-C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\src\main\java\com\mutu\tripdiary\entities\Users.kt
-C:\Users\Umutl\Belgeler\GitHub\TripDiary\app\src\main\java\com\mutu\tripdiary\MainActivity.kt
