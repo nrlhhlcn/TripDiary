@@ -12,16 +12,16 @@
         "source": "C:\\Users\\ahmet\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-38:\\layout\\activity_register.xml"
     },
     {
-        "merged": "com.mutu.tripdiary.app-mergeDebugResources-35:/layout/fragment_profile.xml",
-        "source": "com.mutu.tripdiary.app-main-38:/layout/fragment_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\ahmet\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-35:\\layout\\fragment_home.xml",
         "source": "C:\\Users\\ahmet\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-38:\\layout\\fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\ahmet\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-35:\\layout\\activity_dashboard.xml",
         "source": "C:\\Users\\ahmet\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-38:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "com.mutu.tripdiary.app-mergeDebugResources-35:/layout/fragment_home.xml",
+        "source": "com.mutu.tripdiary.app-main-38:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\ahmet\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-35:\\layout\\fragment_profile.xml",

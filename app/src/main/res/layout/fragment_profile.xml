@@ -2,71 +2,89 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:onClick="btn_logout"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@android:color/white"
-    android:weightSum="1"
-    android:paddingTop="24dp">
+    android:paddingTop="30dp"
+    android:weightSum="1">
 
     <!-- Profil Başlığı -->
     <TextView
         android:id="@+id/profile_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profilim"
-        android:textSize="24sp"
-        android:textColor="@android:color/black"
         android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
         android:paddingBottom="24dp"
-        android:fontFamily="sans-serif-medium"/>
+        android:text="Profilim"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
 
     <!-- Ad Soyad -->
     <EditText
         android:id="@+id/profile_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ad Soyad"
-        android:textSize="16sp"
-        android:padding="12dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/rounded_input"
+        android:hint="Ad Soyad"
+        android:padding="12dp"
         android:textColor="@android:color/black"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="16sp" />
 
     <!-- Email -->
+
+    <!-- Kullanıcı Adı -->
+
+    <!-- Bilgileri Güncelle Butonu -->
+
     <EditText
         android:id="@+id/profile_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
-        android:textSize="16sp"
-        android:padding="12dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_input"
+        android:hint="Email"
+        android:padding="12dp"
         android:textColor="@android:color/black"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="16sp" />
 
-    <!-- Kullanıcı Adı -->
     <EditText
         android:id="@+id/profile_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Kullanıcı Adı"
-        android:textSize="16sp"
-        android:padding="12dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_input"
+        android:hint="Kullanıcı Adı"
+        android:padding="12dp"
         android:textColor="@android:color/black"
-        android:layout_marginBottom="24dp"/>
+        android:textSize="16sp" />
 
-    <!-- Bilgileri Güncelle Butonu -->
     <Button
         android:id="@+id/btn_update"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@color/teal_700"
+        android:padding="12dp"
         android:text="Bilgileri Güncelle"
         android:textColor="@android:color/white"
-        android:background="@color/teal_700"
-        android:textSize="18sp"
-        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="30dp"
+        android:background="@color/teal_700"
+        android:padding="12dp"
+        android:text="Çıkış yap"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+
 
 </LinearLayout>
