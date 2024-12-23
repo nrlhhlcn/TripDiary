@@ -28,6 +28,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.TripDiary" >
         <activity
+            android:name="com.mutu.tripdiary.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.mutu.tripdiary.MainActivity2"
+            android:exported="false" />
+        <activity
             android:name="com.mutu.tripdiary.AnaSayfa"
             android:exported="false" />
         <activity
@@ -57,6 +63,11 @@
                 android:name="androidx.profileinstaller.ProfileInstallerInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

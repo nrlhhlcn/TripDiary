@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-30:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-34:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Umutl\\.gradle\\caches\\8.9\\transforms\\43ca43153e47855f5c99676f04f4a65b\\transformed\\material-1.12.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\a238e313eeba23c0a69324aafe106d3b\\transformed\\material-1.12.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
