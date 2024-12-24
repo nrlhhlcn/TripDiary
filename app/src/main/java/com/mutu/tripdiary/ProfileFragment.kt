@@ -2,11 +2,13 @@ package com.mutu.tripdiary
 
 import android.annotation.SuppressLint
 import android.content.Context.MODE_PRIVATE
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 
 class ProfileFragment : Fragment() {
@@ -15,6 +17,7 @@ class ProfileFragment : Fragment() {
     private lateinit var userNameTextView: TextView
     private lateinit var userEmailTextView: TextView
     private lateinit var userUsernameTextView: TextView
+    private lateinit var logoutButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,23 +26,44 @@ class ProfileFragment : Fragment() {
         }
     }
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        // Layout'u inflate et
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
 
-        // TextView'leri bul
+        // Görünüm öğelerini bul
         userNameTextView = view.findViewById(R.id.profile_name)
         userEmailTextView = view.findViewById(R.id.profile_email)
         userUsernameTextView = view.findViewById(R.id.profile_username)
+        logoutButton = view.findViewById(R.id.btn_logout)
 
-        // Kullanıcı bilgilerini veritabanından al
+        // Kullanıcı bilgilerini al
         getUserDetails()
 
+        // Logout butonuna tıklama olayını bağla
+        logoutButton.setOnClickListener {
+            logout()
+        }
+
         return view
+    }
+
+    private fun logout() {
+        // SharedPreferences'ten oturumu temizle
+        val sharedPreferences = requireActivity().getSharedPreferences("user_prefs", MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.clear() // Tüm verileri sil
+        editor.apply()
+
+        // Giriş ekranına yönlendir
+        val intent = Intent(requireActivity(), MainActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK // Önceki aktiviteleri temizle
+        startActivity(intent)
+
+        // Parent Activity'yi sonlandır
+        requireActivity().finish()
     }
 
     @SuppressLint("Range")
@@ -58,18 +82,14 @@ class ProfileFragment : Fragment() {
                 val username = cursor.getString(cursor.getColumnIndex("username"))
                 val email = cursor.getString(cursor.getColumnIndex("email"))
 
-                // Kullanıcı bilgilerini TextView'lerde göster
+                // TextView'leri güncelle
                 userNameTextView.text = "$name $surname"
                 userEmailTextView.text = email
                 userUsernameTextView.text = username
-            } else {
-
             }
-
             cursor?.close()
         } catch (e: Exception) {
             e.printStackTrace()
-
         }
     }
 

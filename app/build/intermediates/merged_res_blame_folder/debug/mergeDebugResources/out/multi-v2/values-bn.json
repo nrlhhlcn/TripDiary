@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-34:/values-bn/values-bn.xml",
+            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-35:/values-bn/values-bn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\a238e313eeba23c0a69324aafe106d3b\\transformed\\material-1.12.0\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\9141fd2973b8c6591d3facf5af8cb888\\transformed\\material-1.12.0\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\d89b46355af644e0657cc99b6a60d3bd\\transformed\\appcompat-1.7.0\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\805974bfc3395066bf3a90b39aba7795\\transformed\\appcompat-1.7.0\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\dacc6162ef4c2836170a2fd027acdc27\\transformed\\core-1.15.0\\res\\values-bn\\values-bn.xml",
+                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\6273e2d2af99f0199b61b4378700d02a\\transformed\\core-1.15.0\\res\\values-bn\\values-bn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

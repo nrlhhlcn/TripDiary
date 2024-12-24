@@ -2,6 +2,7 @@ package com.mutu.tripdiary
 
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -37,4 +38,6 @@ class DashboardActivity : AppCompatActivity() {
             .commit()
     }
 }
+
+
 
