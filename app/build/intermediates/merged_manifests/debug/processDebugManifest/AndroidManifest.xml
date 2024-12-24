@@ -8,6 +8,9 @@
         android:minSdkVersion="24"
         android:targetSdkVersion="35" />
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <permission
         android:name="com.mutu.tripdiary.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -29,9 +32,6 @@
         android:theme="@style/Theme.TripDiary" >
         <activity
             android:name="com.mutu.tripdiary.DashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.mutu.tripdiary.MainActivity2"
             android:exported="false" />
         <activity
             android:name="com.mutu.tripdiary.AnaSayfa"

@@ -3,6 +3,7 @@ package com.mutu.tripdiary
 import android.app.Activity.RESULT_OK
 import android.content.Context
 import android.content.Intent
+import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -12,11 +13,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.mutu.tripdiary.databinding.FragmentSettingsBinding
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
 
 class SettingsFragment : Fragment() {
 
     private var userId: Int = -1
     private lateinit var binding: FragmentSettingsBinding
+    private var imageFilePath: String? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -59,33 +64,45 @@ class SettingsFragment : Fragment() {
     }
 
     // Fotoğraf seçme işlemi
-    fun selectImage() {
+    private fun selectImage() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
         startActivityForResult(intent, IMAGE_REQUEST_CODE)
     }
 
-    // Seçilen fotoğrafın yolunu almak
+    // Seçilen fotoğrafın içeriğiyle işlem yapma
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == IMAGE_REQUEST_CODE && resultCode == RESULT_OK) {
             val selectedImageUri = data?.data
-            val imagePath = getImagePathFromUri(selectedImageUri)
-            saveTripToDatabase(imagePath)
+            selectedImageUri?.let {
+                imageFilePath = saveImageToInternalStorage(it)
+                Toast.makeText(requireContext(), "Resim kaydedildi", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 
-    fun getImagePathFromUri(uri: Uri?): String {
-        val cursor = requireActivity().contentResolver.query(uri!!, null, null, null, null)
-        cursor?.moveToFirst()
-        val columnIndex = cursor?.getColumnIndex(MediaStore.Images.Media.DATA)
-        val imagePath = cursor?.getString(columnIndex!!)
-        cursor?.close()
-        return imagePath ?: ""
+    // Seçilen resmi internal storage'a kaydetme
+    private fun saveImageToInternalStorage(uri: Uri): String? {
+        return try {
+            val bitmap = MediaStore.Images.Media.getBitmap(requireActivity().contentResolver, uri)
+            val fileName = "trip_image_${System.currentTimeMillis()}.jpg"
+            val file = File(requireContext().filesDir, fileName)
+
+            val outputStream = FileOutputStream(file)
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream)
+            outputStream.flush()
+            outputStream.close()
+
+            file.absolutePath
+        } catch (e: IOException) {
+            e.printStackTrace()
+            null
+        }
     }
 
     // Trip verilerini veritabanına kaydetme
-    fun saveTripToDatabase(imagePath: String? = null) {
+    private fun saveTripToDatabase() {
         val title = binding.tripTitleEditText.text.toString()
         val description = binding.tripDescriptionEditText.text.toString()
         val tripName = binding.tripNameEditText.text.toString()
@@ -102,7 +119,7 @@ class SettingsFragment : Fragment() {
             stmt.bindString(3, title)
             stmt.bindString(4, description)
             stmt.bindLong(5, currentDate) // Tarihi long olarak kaydediyoruz
-            stmt.bindString(6, imagePath ?: "") // Fotoğraf yolunu kaydediyoruz
+            stmt.bindString(6, imageFilePath ?: "") // Fotoğraf yolunu kaydediyoruz
             stmt.executeInsert()
 
             Toast.makeText(requireContext(), "Trip kaydedildi", Toast.LENGTH_LONG).show()
@@ -125,5 +142,3 @@ class SettingsFragment : Fragment() {
             }
     }
 }
-
-

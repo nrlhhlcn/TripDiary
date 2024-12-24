@@ -12,11 +12,12 @@
 
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/welcomeText"
         android:layout_width="230dp"
         android:layout_height="45dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Hoşgeldin "
+        android:text="Hoşgeldin Kullanıcı"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -41,9 +42,10 @@
         android:layout_width="63dp"
         android:layout_height="65dp"
         android:layout_marginStart="148dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/rounded_input"
-        android:src="@drawable/book"
         android:contentDescription="Kitap ikonu"
+        android:src="@drawable/book"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
         app:layout_constraintTop_toTopOf="@+id/imageButton"
         tools:ignore="MissingConstraints" />
@@ -53,12 +55,11 @@
         android:layout_width="63dp"
         android:layout_height="65dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
         android:background="@drawable/rounded_input"
-        android:src="@drawable/a"
         android:contentDescription="A harfi ikonu"
+        android:src="@drawable/a"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
@@ -108,9 +109,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Gezi Kartı 1"
+                    android:textColor="@color/black"
                     android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black" />
+                    android:textStyle="bold" />
 
                 <!-- Açıklama -->
                 <TextView
@@ -119,8 +120,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
                     android:text="Gezi açıklaması buraya gelecek."
-                    android:textSize="14sp"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
 
                 <!-- Tarih -->
                 <TextView
@@ -129,8 +130,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Tarih: 22 Aralık 2024"
-                    android:textSize="12sp"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <!-- Sağdaki Fotoğraf -->

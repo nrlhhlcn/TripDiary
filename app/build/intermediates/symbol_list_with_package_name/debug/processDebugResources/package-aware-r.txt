@@ -3344,6 +3344,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3616,7 +3617,6 @@ id textStart
 id textTop
 id textView
 id textView2
-id textView4
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3664,6 +3664,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id welcomeText
 id west
 id withText
 id with_icon

@@ -58,11 +58,11 @@ id selectImageButton
 id surname
 id textView
 id textView2
-id textView4
 id tripDescriptionEditText
 id tripNameEditText
 id tripTitleEditText
 id username
+id welcomeText
 layout activity_ana_sayfa
 layout activity_dashboard
 layout activity_main
