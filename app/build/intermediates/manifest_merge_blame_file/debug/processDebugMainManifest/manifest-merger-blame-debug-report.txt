@@ -9,154 +9,154 @@
 9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-11-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:4:5-80
-11-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:4:22-77
+11-->C:\TripDiary\app\src\main\AndroidManifest.xml:4:5-80
+11-->C:\TripDiary\app\src\main\AndroidManifest.xml:4:22-77
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-12-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:5:5-81
-12-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:5:22-78
+12-->C:\TripDiary\app\src\main\AndroidManifest.xml:5:5-81
+12-->C:\TripDiary\app\src\main\AndroidManifest.xml:5:22-78
 13
 14    <permission
-14-->[androidx.core:core:1.15.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
+14-->[androidx.core:core:1.15.0] C:\Users\hanar\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:22:5-24:47
 15        android:name="com.mutu.tripdiary.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.15.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
+15-->[androidx.core:core:1.15.0] C:\Users\hanar\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:23:9-81
 16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.15.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
+16-->[androidx.core:core:1.15.0] C:\Users\hanar\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:24:9-44
 17
 18    <uses-permission android:name="com.mutu.tripdiary.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.15.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.15.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
+18-->[androidx.core:core:1.15.0] C:\Users\hanar\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.15.0] C:\Users\hanar\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:7:5-37:19
+20-->C:\TripDiary\app\src\main\AndroidManifest.xml:7:5-37:19
 21        android:allowBackup="true"
-21-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:9:9-35
+21-->C:\TripDiary\app\src\main\AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-22-->[androidx.core:core:1.15.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
+22-->[androidx.core:core:1.15.0] C:\Users\hanar\.gradle\caches\8.9\transforms\6273e2d2af99f0199b61b4378700d02a\transformed\core-1.15.0\AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:10:9-65
+23-->C:\TripDiary\app\src\main\AndroidManifest.xml:10:9-65
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:fullBackupContent="@xml/backup_rules"
-26-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:11:9-54
+26-->C:\TripDiary\app\src\main\AndroidManifest.xml:11:9-54
 27        android:icon="@mipmap/ic_launcher"
-27-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:12:9-43
+27-->C:\TripDiary\app\src\main\AndroidManifest.xml:12:9-43
 28        android:label="@string/app_name"
-28-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:13:9-41
+28-->C:\TripDiary\app\src\main\AndroidManifest.xml:13:9-41
 29        android:roundIcon="@mipmap/ic_launcher_round"
-29-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:14:9-54
+29-->C:\TripDiary\app\src\main\AndroidManifest.xml:14:9-54
 30        android:supportsRtl="true"
-30-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:15:9-35
+30-->C:\TripDiary\app\src\main\AndroidManifest.xml:15:9-35
 31        android:testOnly="true"
 32        android:theme="@style/Theme.TripDiary" >
-32-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:16:9-47
+32-->C:\TripDiary\app\src\main\AndroidManifest.xml:16:9-47
 33        <activity
-33-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:18:9-20:40
+33-->C:\TripDiary\app\src\main\AndroidManifest.xml:18:9-20:40
 34            android:name="com.mutu.tripdiary.DashboardActivity"
-34-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:19:13-46
+34-->C:\TripDiary\app\src\main\AndroidManifest.xml:19:13-46
 35            android:exported="false" />
-35-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:20:13-37
+35-->C:\TripDiary\app\src\main\AndroidManifest.xml:20:13-37
 36        <activity
-36-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:22:9-24:40
+36-->C:\TripDiary\app\src\main\AndroidManifest.xml:22:9-24:40
 37            android:name="com.mutu.tripdiary.AnaSayfa"
-37-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:23:13-37
+37-->C:\TripDiary\app\src\main\AndroidManifest.xml:23:13-37
 38            android:exported="false" />
-38-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:24:13-37
+38-->C:\TripDiary\app\src\main\AndroidManifest.xml:24:13-37
 39        <activity
-39-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:25:9-27:40
+39-->C:\TripDiary\app\src\main\AndroidManifest.xml:25:9-27:40
 40            android:name="com.mutu.tripdiary.RegisterActivity"
-40-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:26:13-45
+40-->C:\TripDiary\app\src\main\AndroidManifest.xml:26:13-45
 41            android:exported="false" />
-41-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:27:13-37
+41-->C:\TripDiary\app\src\main\AndroidManifest.xml:27:13-37
 42        <activity
-42-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:28:9-36:20
+42-->C:\TripDiary\app\src\main\AndroidManifest.xml:28:9-36:20
 43            android:name="com.mutu.tripdiary.MainActivity"
-43-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:29:13-41
+43-->C:\TripDiary\app\src\main\AndroidManifest.xml:29:13-41
 44            android:exported="true" >
-44-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:30:13-36
+44-->C:\TripDiary\app\src\main\AndroidManifest.xml:30:13-36
 45            <intent-filter>
-45-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:31:13-35:29
+45-->C:\TripDiary\app\src\main\AndroidManifest.xml:31:13-35:29
 46                <action android:name="android.intent.action.MAIN" />
-46-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:32:17-69
-46-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:32:25-66
+46-->C:\TripDiary\app\src\main\AndroidManifest.xml:32:17-69
+46-->C:\TripDiary\app\src\main\AndroidManifest.xml:32:25-66
 47
 48                <category android:name="android.intent.category.LAUNCHER" />
-48-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:34:17-77
-48-->C:\Users\ahmet\Desktop\TripDiary\app\src\main\AndroidManifest.xml:34:27-74
+48-->C:\TripDiary\app\src\main\AndroidManifest.xml:34:17-77
+48-->C:\TripDiary\app\src\main\AndroidManifest.xml:34:27-74
 49            </intent-filter>
 50        </activity>
 51
 52        <provider
-52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hanar\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 53            android:name="androidx.startup.InitializationProvider"
-53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+53-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hanar\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 54            android:authorities="com.mutu.tripdiary.androidx-startup"
-54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+54-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hanar\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 55            android:exported="false" >
-55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+55-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hanar\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 56            <meta-data
-56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+56-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hanar\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+57-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hanar\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 58                android:value="androidx.startup" />
-58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+58-->[androidx.emoji2:emoji2:1.3.0] C:\Users\hanar\.gradle\caches\8.9\transforms\7b64826286d21546e5adfd5cab72d1f5\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 59            <meta-data
-59-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ahmet\.gradle\caches\8.9\transforms\0d10f50da939571b3e706ee07e84d1be\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+59-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\hanar\.gradle\caches\8.9\transforms\0d10f50da939571b3e706ee07e84d1be\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
 60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-60-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ahmet\.gradle\caches\8.9\transforms\0d10f50da939571b3e706ee07e84d1be\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+60-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\hanar\.gradle\caches\8.9\transforms\0d10f50da939571b3e706ee07e84d1be\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
 61                android:value="androidx.startup" />
-61-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ahmet\.gradle\caches\8.9\transforms\0d10f50da939571b3e706ee07e84d1be\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+61-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\hanar\.gradle\caches\8.9\transforms\0d10f50da939571b3e706ee07e84d1be\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
 62            <meta-data
-62-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+62-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
 63                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-63-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+63-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
 64                android:value="androidx.startup" />
-64-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+64-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
 65        </provider>
 66
 67        <service
-67-->[androidx.room:room-runtime:2.6.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+67-->[androidx.room:room-runtime:2.6.1] C:\Users\hanar\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
 68            android:name="androidx.room.MultiInstanceInvalidationService"
-68-->[androidx.room:room-runtime:2.6.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+68-->[androidx.room:room-runtime:2.6.1] C:\Users\hanar\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
 69            android:directBootAware="true"
-69-->[androidx.room:room-runtime:2.6.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+69-->[androidx.room:room-runtime:2.6.1] C:\Users\hanar\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
 70            android:exported="false" />
-70-->[androidx.room:room-runtime:2.6.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+70-->[androidx.room:room-runtime:2.6.1] C:\Users\hanar\.gradle\caches\8.9\transforms\c5747fd4834b3ba675bb3b8f536a3a75\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
 71
 72        <receiver
-72-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+72-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
 73            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+73-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
 74            android:directBootAware="false"
-74-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+74-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
 75            android:enabled="true"
-75-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+75-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
 76            android:exported="true"
-76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+76-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
 77            android:permission="android.permission.DUMP" >
-77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+77-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
 78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+78-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
 79                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+79-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
 80            </intent-filter>
 81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+81-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
 82                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
 83            </intent-filter>
 84            <intent-filter>
-84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
 85                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+85-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
 86            </intent-filter>
 87            <intent-filter>
-87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+87-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
 88                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+88-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\hanar\.gradle\caches\8.9\transforms\c3bc4d04c9d60187d4c3b9fb78fea0b8\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
 89            </intent-filter>
 90        </receiver>
 91    </application>
