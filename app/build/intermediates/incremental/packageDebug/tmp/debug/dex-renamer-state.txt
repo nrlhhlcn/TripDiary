@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-#Tue Dec 24 12:03:37 TRT 2024
-=======
-#Wed Dec 25 15:33:15 TRT 2024
->>>>>>> Stashed changes
+#Wed Dec 25 15:40:14 TRT 2024
 base.0=C\:\\TripDiary\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\TripDiary\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\TripDiary\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
