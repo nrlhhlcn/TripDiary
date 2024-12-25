@@ -9,6 +9,7 @@ MERGED from [com.google.android.material:material:1.12.0] C:\Users\ahmet\.gradle
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\ec11a621c0da1165a852a83bed918f0e\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\ce93eedfee2b161e87bbad4fb62d6875\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\d89b46355af644e0657cc99b6a60d3bd\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\1d55857fef7f4e17168ba4ce34557835\transformed\glide-4.15.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\64c2fde5209d8c6db36445aa0de9b83d\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\ahmet\.gradle\caches\8.9\transforms\65df0a545292811357ce140b3fc4eee3\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.9.3] C:\Users\ahmet\.gradle\caches\8.9\transforms\71f16a5a8286c82922aed8e2fc5685db\transformed\activity-1.9.3\AndroidManifest.xml:17:1-22:12
@@ -38,6 +39,8 @@ MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ahmet\.gradle\caches\8.9
 MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\b66e87fede1654e695800797f9e76366\transformed\room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c4f9dc0565c29283d4959db0975c47f2\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\1ad42846914f649024a9dfbcf8efb8ef\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\79bc4c8675a159d4fb32f580aa8c88b5\transformed\gifdecoder-4.15.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\ahmet\.gradle\caches\8.9\transforms\5d99c8621641e960cc135b25d8d29eff\transformed\exifinterface-1.3.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\03956c4ad9bc61be2012a619e581fc68\transformed\profileinstaller-1.4.0\AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\a0b31acc77ab028537015f9c3bac9117\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.2.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\0b8caa009baf6353ebefc63fc08239ad\transformed\tracing-1.2.0\AndroidManifest.xml:17:1-22:12
@@ -67,6 +70,8 @@ MERGED from [com.google.android.material:material:1.12.0] C:\Users\ahmet\.gradle
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\a238e313eeba23c0a69324aafe106d3b\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\ec11a621c0da1165a852a83bed918f0e\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\ec11a621c0da1165a852a83bed918f0e\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\1d55857fef7f4e17168ba4ce34557835\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\1d55857fef7f4e17168ba4ce34557835\transformed\glide-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\42d7ae932b802215b70462ea3e6846a1\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\42d7ae932b802215b70462ea3e6846a1\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.15.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\dacc6162ef4c2836170a2fd027acdc27\transformed\core-1.15.0\AndroidManifest.xml:28:5-89
@@ -75,6 +80,8 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ahmet\.gradle\
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\ahmet\.gradle\caches\8.9\transforms\1c2c4163faef17319bafd217c7913786\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\6b1117afdd11f02e24f026061565ed98\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\6b1117afdd11f02e24f026061565ed98\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\79bc4c8675a159d4fb32f580aa8c88b5\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\79bc4c8675a159d4fb32f580aa8c88b5\transformed\gifdecoder-4.15.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\03956c4ad9bc61be2012a619e581fc68\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\03956c4ad9bc61be2012a619e581fc68\transformed\profileinstaller-1.4.0\AndroidManifest.xml:23:5-53:19
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\a0b31acc77ab028537015f9c3bac9117\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
@@ -157,6 +164,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\ahmet\.gradl
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\ce93eedfee2b161e87bbad4fb62d6875\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\d89b46355af644e0657cc99b6a60d3bd\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\d89b46355af644e0657cc99b6a60d3bd\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\1d55857fef7f4e17168ba4ce34557835\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\1d55857fef7f4e17168ba4ce34557835\transformed\glide-4.15.1\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\64c2fde5209d8c6db36445aa0de9b83d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\64c2fde5209d8c6db36445aa0de9b83d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\ahmet\.gradle\caches\8.9\transforms\65df0a545292811357ce140b3fc4eee3\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
@@ -215,6 +224,10 @@ MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ahmet\.gradle\
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\c4f9dc0565c29283d4959db0975c47f2\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\1ad42846914f649024a9dfbcf8efb8ef\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\1ad42846914f649024a9dfbcf8efb8ef\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\79bc4c8675a159d4fb32f580aa8c88b5\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.15.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\79bc4c8675a159d4fb32f580aa8c88b5\transformed\gifdecoder-4.15.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\ahmet\.gradle\caches\8.9\transforms\5d99c8621641e960cc135b25d8d29eff\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] C:\Users\ahmet\.gradle\caches\8.9\transforms\5d99c8621641e960cc135b25d8d29eff\transformed\exifinterface-1.3.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\03956c4ad9bc61be2012a619e581fc68\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ahmet\.gradle\caches\8.9\transforms\03956c4ad9bc61be2012a619e581fc68\transformed\profileinstaller-1.4.0\AndroidManifest.xml:21:5-44
 MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ahmet\.gradle\caches\8.9\transforms\a0b31acc77ab028537015f9c3bac9117\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41

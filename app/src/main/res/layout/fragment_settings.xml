@@ -1,14 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</FrameLayout>
+        <!-- Gezi Adı EditText -->
+        <EditText
+            android:id="@+id/tripTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gezi Adı" />
+
+        <!-- Ülke/Şehir EditText -->
+        <EditText
+            android:id="@+id/countryCityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ülke/Şehir" />
+
+        <!-- Kategori Spinner -->
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/categories" />
+
+        <!-- Tarih EditText -->
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tarih (GG/AA/YYYY)" />
+
+        <!-- Anılar EditText -->
+        <EditText
+            android:id="@+id/memoriesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Anılarınızı yazın"
+            android:inputType="textMultiLine"
+            android:lines="5" />
+
+        <!-- Description EditText -->
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Açıklama"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <!-- RatingBar -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Fotoğrafları Seç Butonu -->
+        <Button
+            android:id="@+id/selectImagesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fotoğrafları Seç" />
+
+        <!-- Kaydet Butonu -->
+        <Button
+            android:id="@+id/saveTripButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet" />
+
+    </LinearLayout>
+</ScrollView>

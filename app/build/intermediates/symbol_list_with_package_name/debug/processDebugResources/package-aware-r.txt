@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array categories
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3224,6 +3225,10 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnDoga
+id btnEglence
+id btnTarih
+id btnYemek
 id btn_update
 id button2
 id button3
@@ -3232,6 +3237,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id carryVelocity
+id categorySpinner
 id center
 id centerCrop
 id centerInside
@@ -3262,11 +3268,13 @@ id continuousVelocity
 id coordinator
 id cos
 id counterclockwise
+id countryCityEditText
 id cradle
 id currentState
 id custom
 id customPanel
 id cut
+id dateEditText
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -3274,6 +3282,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id descriptionEditText
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3334,6 +3343,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3404,6 +3414,7 @@ id material_timepicker_ok_button
 id material_timepicker_view
 id material_value_index
 id matrix
+id memoriesEditText
 id message
 id middle
 id mini
@@ -3442,6 +3453,7 @@ id name
 id nav_home
 id nav_profile
 id nav_settings
+id navigasyon
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3503,6 +3515,7 @@ id profile_username
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
 id ratio
 id rectangles
 id registterClick
@@ -3515,6 +3528,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saveTripButton
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3535,6 +3549,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id selectImagesButton
 id select_dialog_listview
 id selected
 id selection_type
@@ -3628,6 +3643,10 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tripImage
+id tripNameTextView
+id tripRecyclerView
+id tripTitleEditText
 id unchecked
 id uniform
 id unlabeled
@@ -3644,6 +3663,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id welcomeText
 id west
 id withText
 id with_icon
@@ -3792,6 +3812,7 @@ layout fragment_profile
 layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_trip
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

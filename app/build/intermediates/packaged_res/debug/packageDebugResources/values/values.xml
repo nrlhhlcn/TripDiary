@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="categories">
+        <item>Tarih</item>
+        <item>Doğa</item>
+        <item>Eğlence</item>
+        <item>Yemek</item>
+    </string-array>
     <color name="black">#FF000000</color>
     <color name="specialBlue">#074799</color>
     <color name="specialBrown">#594438</color>

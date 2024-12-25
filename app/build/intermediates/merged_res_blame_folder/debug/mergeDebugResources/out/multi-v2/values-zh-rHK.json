@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-34:/values-zh-rHK/values-zh-rHK.xml",
+            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-35:/values-zh-rHK/values-zh-rHK.xml",
             "map": [
                 {
                     "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\dacc6162ef4c2836170a2fd027acdc27\\transformed\\core-1.15.0\\res\\values-zh-rHK\\values-zh-rHK.xml",
