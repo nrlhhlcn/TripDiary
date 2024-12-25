@@ -3228,6 +3228,10 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnDoga
+id btnEglence
+id btnTarih
+id btnYemek
 id btn_logout
 id btn_update
 id button2
@@ -3236,11 +3240,6 @@ id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
-id cardDate
-id cardDescription
-id cardImage
-id cardTitle
-id cardView1
 id carryVelocity
 id center
 id centerCrop
@@ -3365,10 +3364,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
-id imageButton2
-id imageButton3
-id imageButton4
 id imageView4
 id immediateStop
 id included
@@ -3457,6 +3452,7 @@ id name
 id nav_home
 id nav_profile
 id nav_settings
+id navigasyon
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3646,7 +3642,10 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tripDescriptionEditText
+id tripImage
 id tripNameEditText
+id tripNameTextView
+id tripRecyclerView
 id tripTitleEditText
 id unchecked
 id uniform
@@ -3813,6 +3812,7 @@ layout fragment_profile
 layout fragment_settings
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_trip
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

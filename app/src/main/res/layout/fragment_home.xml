@@ -8,146 +8,100 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="1dp">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Navigation and Welcome Section -->
 
+    <!-- RecyclerView to show multiple trip cards -->
 
-    <TextView
-        android:id="@+id/welcomeText"
-        android:layout_width="230dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="Hoşgeldin Kullanıcı"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigasyon"
+        android:layout_width="409dp"
+        android:layout_height="204dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-2dp">
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="63dp"
-        android:layout_height="65dp"
-        android:background="@drawable/rounded_input"
-        android:src="@drawable/celebration"
-        android:contentDescription="Kutlama ikonu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
-        tools:ignore="MissingConstraints" />
+        <ImageButton
+            android:id="@+id/btnEglence"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="Kutlama ikonu"
+            android:src="@drawable/celebration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnDoga"
+            app:layout_constraintTop_toTopOf="@+id/btnDoga"
+            tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="63dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/rounded_input"
-        android:contentDescription="Kitap ikonu"
-        android:src="@drawable/book"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
-        tools:ignore="MissingConstraints" />
+        <ImageButton
+            android:id="@+id/btnDoga"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="Doğa ikonu"
+            android:src="@drawable/nature"
+            app:layout_constraintEnd_toStartOf="@+id/btnEglence"
+            app:layout_constraintStart_toEndOf="@+id/btnTarih"
+            app:layout_constraintTop_toTopOf="@+id/btnTarih"
+            tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="63dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="16dp"
-        android:background="@drawable/rounded_input"
-        android:contentDescription="A harfi ikonu"
-        android:src="@drawable/a"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
-        tools:ignore="MissingConstraints" />
+        <ImageButton
+            android:id="@+id/btnTarih"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="33dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="Kitap ikonu"
+            android:src="@drawable/book"
+            app:layout_constraintEnd_toStartOf="@+id/btnDoga"
+            app:layout_constraintStart_toEndOf="@+id/btnYemek"
+            app:layout_constraintTop_toTopOf="@+id/btnYemek"
+            tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="63dp"
-        android:layout_height="65dp"
-        android:background="@drawable/rounded_input"
-        android:src="@drawable/nature"
-        android:contentDescription="Doğa ikonu"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="230dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="16dp"
+            android:text="Hoşgeldin Kullanıcı"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnYemek"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageButton
+            android:id="@+id/btnYemek"
+            android:layout_width="61dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="78dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="A harfi ikonu"
+            android:src="@drawable/a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnTarih"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+            tools:ignore="MissingConstraints" />
+        <!-- Buttons and icons... -->
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tripRecyclerView"
+        android:layout_width="385dp"
+        android:layout_height="519dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/white"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
-            <!-- Soldaki Metin Alanları -->
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <!-- Başlık -->
-                <TextView
-                    android:id="@+id/cardTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Gezi Kartı 1"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <!-- Açıklama -->
-                <TextView
-                    android:id="@+id/cardDescription"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:text="Gezi açıklaması buraya gelecek."
-                    android:textColor="@color/black"
-                    android:textSize="14sp" />
-
-                <!-- Tarih -->
-                <TextView
-                    android:id="@+id/cardDate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Tarih: 22 Aralık 2024"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- Sağdaki Fotoğraf -->
-            <ImageView
-                android:id="@+id/cardImage"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="8dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/book" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-
-
-
+        app:layout_constraintTop_toBottomOf="@id/navigasyon"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
