@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <!-- Navigation and Welcome Section -->
+
+    <!-- RecyclerView to show multiple trip cards -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navigasyon"
+        android:layout_width="409dp"
+        android:layout_height="204dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-2dp">
+
+        <ImageButton
+            android:id="@+id/btnEglence"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="Kutlama ikonu"
+            android:src="@drawable/celebration"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnDoga"
+            app:layout_constraintTop_toTopOf="@+id/btnDoga"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btnDoga"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="Doğa ikonu"
+            android:src="@drawable/nature"
+            app:layout_constraintEnd_toStartOf="@+id/btnEglence"
+            app:layout_constraintStart_toEndOf="@+id/btnTarih"
+            app:layout_constraintTop_toTopOf="@+id/btnTarih"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/btnTarih"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="33dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="Kitap ikonu"
+            android:src="@drawable/book"
+            app:layout_constraintEnd_toStartOf="@+id/btnDoga"
+            app:layout_constraintStart_toEndOf="@+id/btnYemek"
+            app:layout_constraintTop_toTopOf="@+id/btnYemek"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="230dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="16dp"
+            android:text="Hoşgeldin Kullanıcı"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnYemek"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnYemek"
+            android:layout_width="61dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="78dp"
+            android:background="@drawable/rounded_input"
+            android:contentDescription="A harfi ikonu"
+            android:src="@drawable/a"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnTarih"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+            tools:ignore="MissingConstraints" />
+        <!-- Buttons and icons... -->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tripRecyclerView"
+        android:layout_width="385dp"
+        android:layout_height="519dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/navigasyon"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

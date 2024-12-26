@@ -66,7 +66,7 @@ class RegisterActivity : AppCompatActivity() {
 
             statement.bindString(1, user.name)
             statement.bindString(2, user.surname)
-            statement.bindString(3, user.usermane)
+            statement.bindString(3, user.username)
             statement.bindString(4, user.email)
             statement.bindString(5, user.password)
             statement.executeInsert()
