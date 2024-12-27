@@ -1,6 +1,7 @@
 [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "merged": "com.mutu.tripdiary.app-mergeDebugResources-3:/layout/activity_register.xml",
         "source": "com.mutu.tripdiary.app-main-6:/layout/activity_register.xml"
     },
@@ -31,6 +32,38 @@
     {
         "merged": "com.mutu.tripdiary.app-mergeDebugResources-3:/layout/activity_dashboard.xml",
         "source": "com.mutu.tripdiary.app-main-6:/layout/activity_dashboard.xml"
+=======
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\recycler_row.xml",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\recycler_row.xml"
+    },
+    {
+        "merged": "com.mutu.tripdiary.app-mergeDebugResources-3:/layout/fragment_settings.xml",
+        "source": "com.mutu.tripdiary.app-main-6:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\fragment_home.xml"
+>>>>>>> Stashed changes
 =======
         "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-mergeDebugResources-3:\\layout\\activity_main.xml",
         "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\activity_main.xml"

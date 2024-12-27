@@ -130,6 +130,14 @@ class SettingsFragment : Fragment() {
 =======
         val currentDate = binding.tripDateEditText.text.toString()
         val tripCategory = binding.tripCategorySpinner.selectedItem.toString()
+<<<<<<< Updated upstream
+=======
+
+        if (tripName.isEmpty() || title.isEmpty() || description.isEmpty() || currentDate.isEmpty()) {
+            Toast.makeText(requireContext(), "Tüm alanları doldurunuz", Toast.LENGTH_SHORT).show()
+            return
+        }
+>>>>>>> Stashed changes
 
         if (tripName.isEmpty() || title.isEmpty() || description.isEmpty() || currentDate.isEmpty()) {
             Toast.makeText(requireContext(), "Tüm alanları doldurunuz", Toast.LENGTH_SHORT).show()
@@ -149,6 +157,9 @@ class SettingsFragment : Fragment() {
 
             val sql = """INSERT INTO trip (userId, tripName, title, description, imagePath,date,tripCategory) 
                          VALUES (?, ?, ?, ?, ?, ?, ?)"""
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             val stmt = database.compileStatement(sql)
             stmt.bindLong(1, userId.toLong()) // userId'yi burada kullanıyoruz
@@ -156,8 +167,14 @@ class SettingsFragment : Fragment() {
             stmt.bindString(3, title)
             stmt.bindString(4, description)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             stmt.bindLong(5, currentDate) // Tarihi long olarak kaydediyoruz
             stmt.bindString(6, imageFilePath ?: "") // Fotoğraf yolunu kaydediyoruz
+=======
+            stmt.bindString(5, imagePathsString) // Fotoğraf yollarını kaydediyoruz
+            stmt.bindString(6, currentDate)
+            stmt.bindString(7, tripCategory)
+>>>>>>> Stashed changes
 =======
             stmt.bindString(5, imagePathsString) // Fotoğraf yollarını kaydediyoruz
             stmt.bindString(6, currentDate)
@@ -173,7 +190,10 @@ class SettingsFragment : Fragment() {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     class SettingsFragment : Fragment() {
 
         private var userId: Int = -1
@@ -356,6 +376,9 @@ class SettingsFragment : Fragment() {
         }
     }
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     companion object {
         private const val ARG_USER_ID = "user_id"

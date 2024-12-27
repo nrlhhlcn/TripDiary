@@ -59,6 +59,9 @@
             android:layout_height="wrap_content"
             android:text="Sil"
             android:layout_marginTop="8dp" />
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </LinearLayout>
 

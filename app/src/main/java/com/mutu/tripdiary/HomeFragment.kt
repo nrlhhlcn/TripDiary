@@ -70,10 +70,13 @@ class HomeFragment : Fragment() {
         val resimId = tripCursor.getColumnIndex("imagePath")
         val dateId = tripCursor.getColumnIndex("date")
         val catagoryId = tripCursor.getColumnIndex("tripCategory")
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
         // Create a list to hold trip data
         val tripList = mutableListOf<Trip>()
+=======
+>>>>>>> Stashed changes
 
         while (tripCursor.moveToNext()) {
             val tripName = tripCursor.getString(0)
