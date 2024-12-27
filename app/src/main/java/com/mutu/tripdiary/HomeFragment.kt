@@ -2,6 +2,7 @@ package com.mutu.tripdiary
 
 import android.content.Context
 import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -18,6 +19,7 @@ class HomeFragment : Fragment() {
     private var userId: Int = -1
     private lateinit var tripAdaptor: TripAdaptor
     private var tripList: ArrayList<Trip> = ArrayList()
+    private var selectedCategory: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +36,9 @@ class HomeFragment : Fragment() {
         val rootView = binding.root
 
         val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
+        if (database == null) {
+            throw IllegalStateException("Veritabanı açılamadı! Context null olabilir.")
+        }
 
         // Kullanıcı adını al
         val userCursor: Cursor = database.rawQuery(
@@ -48,6 +53,31 @@ class HomeFragment : Fragment() {
         }
         userCursor.close()
 
+        /*
+        binding.foodButton.setOnClickListener {
+            selectedCategory = "Yemek"
+            loadTrips(database, binding)
+        }
+
+        binding.natureButton.setOnClickListener {
+            selectedCategory = "Doga"
+            loadTrips(database, binding)
+        }
+
+        binding.entertainmentButton.setOnClickListener {
+            selectedCategory = "Eglence"
+            loadTrips(database, binding)
+        }
+
+        binding.historyButton.setOnClickListener {
+            selectedCategory = "Tarih"
+            loadTrips(database, binding)
+        }
+
+        loadTrips(database, binding) */
+
+
+
         // RecyclerView ve TripAdaptor
         tripAdaptor = TripAdaptor(tripList)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
@@ -59,6 +89,8 @@ class HomeFragment : Fragment() {
             arrayOf(userId.toString())
         )
 
+
+
         val trimNameId = tripCursor.getColumnIndex("tripName")
         val ulkeId = tripCursor.getColumnIndex("title")
         val aniId = tripCursor.getColumnIndex("description")
@@ -66,40 +98,59 @@ class HomeFragment : Fragment() {
         val dateId = tripCursor.getColumnIndex("date")
         val tripCategory = tripCursor.getColumnIndex("tripCategory")
 
-        println("deneme")
-        while (tripCursor.moveToNext()) {
+        // Eğer sonuç yoksa listeyi temizle ve kullanıcıya mesaj göster
+        if (!tripCursor.moveToFirst()) {
+            binding.welcomeText.text = "Henüz gezi bilginiz yok!"
+        } else {
+            do {
+                val tripName = tripCursor.getString(trimNameId)
+                val title = tripCursor.getString(ulkeId)
+                val ani = tripCursor.getString(aniId)
+                val resim = tripCursor.getString(resimId) ?: ""
+                val date = tripCursor.getString(dateId)
+                val category = tripCursor.getString(tripCategory)
 
-            val tripName = tripCursor.getString(trimNameId)
-            val title = tripCursor.getString(ulkeId)
+                // Görsel yolu kontrolü
+                val firstImagePath = resim.split(",").getOrElse(0) { "" }
 
-            val ani = tripCursor.getString(aniId)
-            val resim=tripCursor.getString(resimId)
-            val date=tripCursor.getString(dateId)
-            val category = tripCursor.getString(tripCategory)
+                val trip = Trip(tripName, title, ani, firstImagePath, date, category)
+                tripList.add(trip)
 
-            val firstImagePath = resim.split(",").getOrElse(0) { "" }
-
-            if (firstImagePath.isNotEmpty()) {
-                println("İlk görsel yolu: $firstImagePath")
-            } else {
-                println("Görsel yolu mevcut değil.")
-            }
-
-
-            val  trip=Trip(tripName,title,ani,firstImagePath,date,category)
-            println("sadda")
-            tripList.add(trip)
-
+            } while (tripCursor.moveToNext())
         }
+
+        /*
+       while (tripCursor.moveToNext()) {
+
+           val tripName = tripCursor.getString(trimNameId)
+           val title = tripCursor.getString(ulkeId)
+
+           val ani = tripCursor.getString(aniId)
+           val resim=tripCursor.getString(resimId)
+           val date=tripCursor.getString(dateId)
+           val category = tripCursor.getString(tripCategory)
+
+           val firstImagePath = resim.split(",").getOrElse(0) { "" }
+
+           if (firstImagePath.isNotEmpty()) {
+               println("İlk görsel yolu: $firstImagePath")
+           } else {
+               println("Görsel yolu mevcut değil.")
+           }
+
+
+           val  trip=Trip(tripName,title,ani,firstImagePath,date,category)
+           println("sadda")
+           tripList.add(trip)
+
+       } */
         tripAdaptor.notifyDataSetChanged()
         tripCursor.close()
         database.close()
 
-        // Liste güncelle
-        tripAdaptor.notifyDataSetChanged()
-
         return rootView
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

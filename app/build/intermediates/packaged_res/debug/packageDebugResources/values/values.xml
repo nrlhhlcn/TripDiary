@@ -15,6 +15,7 @@
     <color name="specialWhiteBlue">#A3BAD9</color>
     <color name="specialWhiteBrown">#8C765A</color>
     <color name="specialWhiteGreen">#B0D9C1</color>
+    <color name="teal_200">#03DAC5</color>
     <color name="teal_700">#008080</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">TripDiary</string>

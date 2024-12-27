@@ -9,6 +9,7 @@ color specialOrange
 color specialWhiteBlue
 color specialWhiteBrown
 color specialWhiteGreen
+color teal_200
 color teal_700
 color white
 drawable a
@@ -56,10 +57,12 @@ id recyclerView
 id registterClick
 id repeatPassword
 id saveTripButton
+id scrollView2
 id selectImageButton
 id surname
 id textView
 id textView2
+id textView3
 id tripCard
 id tripCategorySpinner
 id tripDateEditText

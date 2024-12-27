@@ -1,5 +1,6 @@
 package com.mutu.tripdiary
 
+import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
@@ -19,8 +20,19 @@ class DashboardActivity : AppCompatActivity() {
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
+
+        // Veritabanında trip tablosunu kontrol et
+        val database = this.openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
+        val tripTableExists = checkIfTripTableExists(database)
+
+        // Tablo durumuna göre başlangıç fragmentini belirle
+        if (tripTableExists) {
+            replaceFragment(HomeFragment.newInstance(userId))
+        } else {
+            replaceFragment(SettingsFragment.newInstance(userId))
+        }
         // Varsayılan olarak ilk fragmenti yükle ve userId'yi gönder
-        replaceFragment(HomeFragment.newInstance(userId))
+        //replaceFragment(HomeFragment.newInstance(userId))
 
         bottomNavigationView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
@@ -36,6 +48,16 @@ class DashboardActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .commit()
+    }
+
+    private fun checkIfTripTableExists(database: android.database.sqlite.SQLiteDatabase): Boolean {
+        val cursor = database.rawQuery(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='trip';",
+            null
+        )
+        val tableExists = cursor.count > 0
+        cursor.close()
+        return tableExists
     }
 }
 

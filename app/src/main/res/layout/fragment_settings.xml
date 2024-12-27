@@ -1,66 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingsFragment">
 
-    <!-- activity_trip.xml -->
-    <!-- fragment_settings.xml -->
-    <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:backgroundTint="#BAD9F2">
 
-        <EditText
-            android:id="@+id/tripNameEditText"
-            android:hint="Trip Adı"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="408dp"
+            android:layout_height="461dp"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/tripTitleEditText"
-            android:hint="Başlık"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-        <EditText
-            android:id="@+id/tripDateEditText"
-            android:hint="Tarih"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/tripDescriptionEditText"
-            android:hint="Açıklama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/tripNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:hint="Trip Adı"
+                    android:padding="12dp" />
 
-        <Spinner
-            android:id="@+id/tripCategorySpinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:spinnerMode="dropdown"
-            android:prompt="@string/trip_category_prompt" />
+                <EditText
+                    android:id="@+id/tripTitleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:hint="Başlık"
+                    android:padding="12dp" />
 
-        <Button
-            android:id="@+id/selectImageButton"
-            android:text="Fotoğraf Seç"
+                <EditText
+                    android:id="@+id/tripDateEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:hint="Tarih"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/tripDescriptionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="@color/teal_200"
+                    android:hint="Açıklama"
+                    android:padding="12dp" />
+
+                <Spinner
+                    android:id="@+id/tripCategorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" />
+
+                <Button
+                    android:id="@+id/selectImageButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:paddingHorizontal="20dp"
+                    android:text="Fotoğraf Seç" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="82dp">
+
+                    <Button
+                        android:id="@+id/deleteTripsButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingHorizontal="20dp"
+                        android:text="Sil"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <Button
+                        android:id="@+id/saveTripButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:paddingHorizontal="20dp"
+                        android:text="Kaydet"
+                        app:layout_constraintBottom_toBottomOf="@+id/deleteTripsButton"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/saveTripButton"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kaydet" />
-        <Button
-            android:id="@+id/deleteTripsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sil"
-            android:layout_marginTop="8dp" />
-    </LinearLayout>
-
+            android:text="TripDiary"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

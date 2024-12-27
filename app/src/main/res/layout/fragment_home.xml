@@ -20,42 +20,42 @@
         android:text="Hoşgeldin Kullanıcı"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/entertainmentButton"
         android:layout_width="63dp"
         android:layout_height="65dp"
+        android:layout_marginStart="32dp"
         android:background="@drawable/rounded_input"
-        android:src="@drawable/celebration"
         android:contentDescription="Kutlama ikonu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.901"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        android:src="@drawable/celebration"
+        app:layout_constraintStart_toEndOf="@+id/foodButton"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/historyButton"
         android:layout_width="63dp"
         android:layout_height="65dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/rounded_input"
         android:contentDescription="Kitap ikonu"
         android:src="@drawable/book"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="63dp"
-        android:layout_height="65dp"
+        android:id="@+id/foodButton"
+        android:layout_width="60dp"
+        android:layout_height="59dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/rounded_input"
+
         android:contentDescription="A harfi ikonu"
         android:src="@drawable/a"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,16 +63,18 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/natureButton"
         android:layout_width="63dp"
         android:layout_height="65dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/rounded_input"
-        android:src="@drawable/nature"
+
         android:contentDescription="Doğa ikonu"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="@+id/imageButton"
+        android:src="@drawable/nature"
+        app:layout_constraintEnd_toStartOf="@+id/historyButton"
+        app:layout_constraintStart_toEndOf="@+id/entertainmentButton"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
         tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -86,7 +88,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintTop_toBottomOf="@+id/natureButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
