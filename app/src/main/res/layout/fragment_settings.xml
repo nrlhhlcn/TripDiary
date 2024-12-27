@@ -36,6 +36,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+        <Spinner
+            android:id="@+id/tripCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:prompt="@string/trip_category_prompt" />
+
         <Button
             android:id="@+id/selectImageButton"
             android:text="Fotoğraf Seç"
@@ -47,6 +54,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kaydet" />
+        <Button
+            android:id="@+id/deleteTripsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sil"
+            android:layout_marginTop="8dp" />
     </LinearLayout>
 
 

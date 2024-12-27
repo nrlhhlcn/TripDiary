@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.mutu.tripdiary.databinding.FragmentSettingsBinding
 import java.io.File
@@ -35,6 +36,15 @@ class SettingsFragment : Fragment() {
             userId = it.getInt(ARG_USER_ID)
         }
 
+        val spinner = binding.tripCategorySpinner
+        val adapter = ArrayAdapter.createFromResource(
+            requireContext(),
+            R.array.trip_categories,
+            android.R.layout.simple_spinner_item
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinner.adapter = adapter
+
         // Veritabanı işlemleri (Tabloyu oluşturuyoruz)
         val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
 
@@ -48,8 +58,17 @@ class SettingsFragment : Fragment() {
                 description TEXT, 
                 date DATETIME, 
                 imagePath VARCHAR,
+                tripCategory VARCHAR,
                 FOREIGN KEY(userId) REFERENCES user(id))"""
         )
+        try {
+            database.execSQL("ALTER TABLE trip ADD COLUMN tripCategory VARCHAR")
+        } catch (e: Exception) {
+            if (!e.message?.contains("duplicate column name", true)!!) {
+                throw e
+            }
+            e.printStackTrace()
+        }
 
         // Fotoğraf seçme butonuna tıklama işlemi
         binding.selectImageButton.setOnClickListener {
@@ -59,6 +78,11 @@ class SettingsFragment : Fragment() {
         // Kaydetme butonuna tıklama işlemi
         binding.saveTripButton.setOnClickListener {
             saveTripToDatabase()
+        }
+
+        // Silme butonuna tıklama işlemi
+        binding.deleteTripsButton.setOnClickListener {
+            deleteTripsWithNullCategory()
         }
 
         return binding.root
@@ -112,31 +136,34 @@ class SettingsFragment : Fragment() {
         }
     }
 
-    // Seçilen resmi internal storage'a kaydetme
-
-
     // Trip verilerini veritabanına kaydetme
     private fun saveTripToDatabase() {
         val title = binding.tripTitleEditText.text.toString()
         val description = binding.tripDescriptionEditText.text.toString()
         val tripName = binding.tripNameEditText.text.toString()
         val currentDate = binding.tripDateEditText.text.toString()
+        val tripCategory = binding.tripCategorySpinner.selectedItem.toString()
 
+        if (tripName.isEmpty() || title.isEmpty() || description.isEmpty() || currentDate.isEmpty()) {
+            Toast.makeText(requireContext(), "Tüm alanları doldurunuz", Toast.LENGTH_SHORT).show()
+            return
+        }
 
         val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
 
         try {
             val imagePathsString = imageFilePaths.joinToString(",") // Fotoğraf yollarını virgülle ayır
 
-            val sql = """INSERT INTO trip (userId, tripName, title, description, imagePaths,date) 
-                         VALUES (?, ?, ?, ?, ?, ?)"""
+            val sql = """INSERT INTO trip (userId, tripName, title, description, imagePath,date,tripCategory) 
+                         VALUES (?, ?, ?, ?, ?, ?, ?)"""
             val stmt = database.compileStatement(sql)
             stmt.bindLong(1, userId.toLong())
             stmt.bindString(2, tripName)
             stmt.bindString(3, title)
             stmt.bindString(4, description)
-            stmt.bindString(6, currentDate)
             stmt.bindString(5, imagePathsString) // Fotoğraf yollarını kaydediyoruz
+            stmt.bindString(6, currentDate)
+            stmt.bindString(7, tripCategory)
             stmt.executeInsert()
 
             Toast.makeText(requireContext(), "Trip kaydedildi", Toast.LENGTH_LONG).show()
@@ -145,6 +172,20 @@ class SettingsFragment : Fragment() {
             Toast.makeText(requireContext(), "Bir hata oluştu", Toast.LENGTH_LONG).show()
         }
     }
+
+    // tripCategory null olan verileri silme
+    private fun deleteTripsWithNullCategory() {
+        val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
+
+        try {
+            val rowsDeleted = database.delete("trip", "tripCategory IS NULL", null)
+            Toast.makeText(requireContext(), "$rowsDeleted kayıt silindi", Toast.LENGTH_SHORT).show()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(requireContext(), "Silme işlemi sırasında bir hata oluştu", Toast.LENGTH_LONG).show()
+        }
+    }
+
     companion object {
         private const val ARG_USER_ID = "user_id"
         private const val IMAGE_REQUEST_CODE = 1

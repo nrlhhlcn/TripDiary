@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+array trip_categories
 color black
 color specialBlue
 color specialBrown
@@ -31,6 +32,7 @@ id cardDescription
 id cardImage
 id cardTitle
 id checkBox
+id deleteTripsButton
 id email
 id fragment_container
 id imageButton
@@ -59,6 +61,7 @@ id surname
 id textView
 id textView2
 id tripCard
+id tripCategorySpinner
 id tripDateEditText
 id tripDescriptionEditText
 id tripNameEditText
@@ -77,6 +80,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
 string hello_blank_fragment
+string trip_category_prompt
 style Base.Theme.TripDiary
 style Theme.TripDiary
 xml backup_rules

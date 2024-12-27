@@ -7,5 +7,6 @@ class Trip(
     val title: String,
     val ani: String,
     val imagePath:String,
-    val date:String
+    val date:String,
+    val tripCategory: String
 )

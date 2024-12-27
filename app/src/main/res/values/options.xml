@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="trip_categories">
+        <item>Yemek</item>
+        <item>Doğa</item>
+        <item>Tarihi</item>
+        <item>Eğlence</item>
+        <item>Diğer</item>
+    </string-array>
+</resources>

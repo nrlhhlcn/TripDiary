@@ -55,14 +55,16 @@ class HomeFragment : Fragment() {
 
         // Gezi bilgilerini al ve listeye ekle
         val tripCursor: Cursor = database.rawQuery(
-            "SELECT tripName, title, description, date, imagePath FROM trip WHERE userId = ? ORDER BY tripId DESC",
+            "SELECT tripName, title, description, date, imagePath, tripCategory FROM trip WHERE userId = ? ORDER BY tripId DESC",
             arrayOf(userId.toString())
         )
+
         val trimNameId = tripCursor.getColumnIndex("tripName")
         val ulkeId = tripCursor.getColumnIndex("title")
         val aniId = tripCursor.getColumnIndex("description")
         val resimId = tripCursor.getColumnIndex("imagePath")
         val dateId = tripCursor.getColumnIndex("date")
+        val tripCategory = tripCursor.getColumnIndex("tripCategory")
 
         println("deneme")
         while (tripCursor.moveToNext()) {
@@ -73,6 +75,7 @@ class HomeFragment : Fragment() {
             val ani = tripCursor.getString(aniId)
             val resim=tripCursor.getString(resimId)
             val date=tripCursor.getString(dateId)
+            val category = tripCursor.getString(tripCategory)
 
             val firstImagePath = resim.split(",").getOrElse(0) { "" }
 
@@ -83,7 +86,7 @@ class HomeFragment : Fragment() {
             }
 
 
-            val  trip=Trip(tripName,title,ani,firstImagePath,date)
+            val  trip=Trip(tripName,title,ani,firstImagePath,date,category)
             println("sadda")
             tripList.add(trip)
 
