@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-39:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "com.mutu.tripdiary.app-debug-37:/drawable_add_icon.png.flat",
+        "source": "com.mutu.tripdiary.app-main-39:/drawable/add_icon.png"
+    },
+    {
         "merged": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-37:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-39:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -32,12 +36,24 @@
         "source": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-39:\\drawable\\user_pp.png"
     },
     {
+        "merged": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-37:\\drawable_add.xml.flat",
+        "source": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-39:\\drawable\\add.xml"
+    },
+    {
+        "merged": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-37:\\drawable_ic_all.xml.flat",
+        "source": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-39:\\drawable\\ic_all.xml"
+    },
+    {
         "merged": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-37:\\drawable_baseline_person_24.xml.flat",
         "source": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-39:\\drawable\\baseline_person_24.xml"
     },
     {
         "merged": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-37:\\drawable_book.xml.flat",
         "source": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-39:\\drawable\\book.xml"
+    },
+    {
+        "merged": "com.mutu.tripdiary.app-debug-37:/menu_nav_menu.xml.flat",
+        "source": "com.mutu.tripdiary.app-main-39:/menu/nav_menu.xml"
     },
     {
         "merged": "C:\\Users\\Umutl\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-37:\\layout_activity_main.xml.flat",

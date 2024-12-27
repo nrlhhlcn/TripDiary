@@ -28,7 +28,7 @@
         android:id="@+id/entertainmentButton"
         android:layout_width="63dp"
         android:layout_height="65dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/rounded_input"
         android:contentDescription="Kutlama ikonu"
         android:src="@drawable/celebration"
@@ -44,7 +44,7 @@
         android:background="@drawable/rounded_input"
         android:contentDescription="Kitap ikonu"
         android:src="@drawable/book"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/showAllButton"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText"
         tools:ignore="MissingConstraints" />
 
@@ -53,7 +53,7 @@
         android:layout_width="60dp"
         android:layout_height="59dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/rounded_input"
 
         android:contentDescription="A harfi ikonu"
@@ -74,6 +74,20 @@
         android:src="@drawable/nature"
         app:layout_constraintEnd_toStartOf="@+id/historyButton"
         app:layout_constraintStart_toEndOf="@+id/entertainmentButton"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/showAllButton"
+        android:layout_width="63dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+
+        android:background="@drawable/rounded_input"
+        android:contentDescription="Doğa ikonu"
+        android:src="@drawable/ic_all"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcomeText"
         tools:ignore="MissingConstraints" />
 

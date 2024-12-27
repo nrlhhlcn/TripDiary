@@ -3008,6 +3008,8 @@ int drawable abc_textfield_search_activated_mtrl_alpha 0x7f080075
 int drawable abc_textfield_search_default_mtrl_alpha 0x7f080076
 int drawable abc_textfield_search_material 0x7f080077
 int drawable abc_vector_test 0x7f080078
+int drawable add 0x7f0800ef
+int drawable add_icon 0x7f0800f1
 int drawable avd_hide_password 0x7f080079
 int drawable avd_show_password 0x7f08007a
 int drawable baseline_person_24 0x7f08007b
@@ -3027,6 +3029,7 @@ int drawable design_ic_visibility_off 0x7f080088
 int drawable design_password_eye 0x7f080089
 int drawable design_snackbar_background 0x7f08008a
 int drawable home 0x7f08008b
+int drawable ic_all 0x7f0800f0
 int drawable ic_arrow_back_black_24 0x7f08008c
 int drawable ic_call_answer 0x7f08008d
 int drawable ic_call_answer_low 0x7f08008e
@@ -3321,6 +3324,7 @@ int id end 0x7f0a00be
 int id endToStart 0x7f0a00bf
 int id enterAlways 0x7f0a00c0
 int id enterAlwaysCollapsed 0x7f0a00c1
+int id entertainmentButton 0x7f0a022a
 int id escape 0x7f0a00c2
 int id exitUntilCollapsed 0x7f0a00c3
 int id expand_activities_button 0x7f0a00c4
@@ -3338,6 +3342,7 @@ int id fitXY 0x7f0a00cf
 int id fixed 0x7f0a00d0
 int id flip 0x7f0a00d1
 int id floating 0x7f0a00d2
+int id foodButton 0x7f0a022b
 int id forever 0x7f0a00d3
 int id fragment_container 0x7f0a00d4
 int id fragment_container_view_tag 0x7f0a00d5
@@ -3355,6 +3360,7 @@ int id groups 0x7f0a00e0
 int id header_title 0x7f0a00e1
 int id hide_ime_id 0x7f0a00e2
 int id hideable 0x7f0a00e3
+int id historyButton 0x7f0a022c
 int id home 0x7f0a00e4
 int id homeAsUp 0x7f0a00e5
 int id honorRequest 0x7f0a00e6
@@ -3366,10 +3372,6 @@ int id ifRoom 0x7f0a00eb
 int id ignore 0x7f0a00ec
 int id ignoreRequest 0x7f0a00ed
 int id image 0x7f0a00ee
-int id imageButton 0x7f0a00ef
-int id imageButton2 0x7f0a00f0
-int id imageButton3 0x7f0a00f1
-int id imageButton4 0x7f0a00f2
 int id imageView4 0x7f0a00f3
 int id immediateStop 0x7f0a00f4
 int id included 0x7f0a00f5
@@ -3455,6 +3457,7 @@ int id mtrl_picker_title_text 0x7f0a0144
 int id mtrl_view_tag_bottom_padding 0x7f0a0145
 int id multiply 0x7f0a0146
 int id name 0x7f0a0147
+int id natureButton 0x7f0a022d
 int id nav_home 0x7f0a0148
 int id nav_profile 0x7f0a0149
 int id nav_settings 0x7f0a014a
@@ -3561,6 +3564,7 @@ int id selection_type 0x7f0a01ae
 int id sharedValueSet 0x7f0a01af
 int id sharedValueUnset 0x7f0a01b0
 int id shortcut 0x7f0a01b1
+int id showAllButton 0x7f0a022e
 int id showCustom 0x7f0a01b2
 int id showHome 0x7f0a01b3
 int id showTitle 0x7f0a01b4

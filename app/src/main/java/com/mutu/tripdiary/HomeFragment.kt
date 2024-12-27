@@ -53,36 +53,39 @@ class HomeFragment : Fragment() {
         }
         userCursor.close()
 
-        /*
+
         binding.foodButton.setOnClickListener {
             selectedCategory = "Yemek"
             loadTrips(database, binding)
         }
 
         binding.natureButton.setOnClickListener {
-            selectedCategory = "Doga"
+            selectedCategory = "Doğa"
             loadTrips(database, binding)
         }
 
         binding.entertainmentButton.setOnClickListener {
-            selectedCategory = "Eglence"
+            selectedCategory = "Eğlence"
             loadTrips(database, binding)
         }
 
         binding.historyButton.setOnClickListener {
-            selectedCategory = "Tarih"
+            selectedCategory = "Tarihi"
             loadTrips(database, binding)
         }
 
-        loadTrips(database, binding) */
+        binding.showAllButton.setOnClickListener {
+            selectedCategory = null // Tüm tripleri göstermek için null yap
+            loadTrips(database, binding)
+        }
 
-
-
-        // RecyclerView ve TripAdaptor
         tripAdaptor = TripAdaptor(tripList)
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        binding.recyclerView.adapter = tripAdaptor
 
+        loadTrips(database, binding)
+
+
+
+        /*
         // Gezi bilgilerini al ve listeye ekle
         val tripCursor: Cursor = database.rawQuery(
             "SELECT tripName, title, description, date, imagePath, tripCategory FROM trip WHERE userId = ? ORDER BY tripId DESC",
@@ -117,43 +120,65 @@ class HomeFragment : Fragment() {
                 tripList.add(trip)
 
             } while (tripCursor.moveToNext())
-        }
+        } */
 
-        /*
-       while (tripCursor.moveToNext()) {
-
-           val tripName = tripCursor.getString(trimNameId)
-           val title = tripCursor.getString(ulkeId)
-
-           val ani = tripCursor.getString(aniId)
-           val resim=tripCursor.getString(resimId)
-           val date=tripCursor.getString(dateId)
-           val category = tripCursor.getString(tripCategory)
-
-           val firstImagePath = resim.split(",").getOrElse(0) { "" }
-
-           if (firstImagePath.isNotEmpty()) {
-               println("İlk görsel yolu: $firstImagePath")
-           } else {
-               println("Görsel yolu mevcut değil.")
-           }
-
-
-           val  trip=Trip(tripName,title,ani,firstImagePath,date,category)
-           println("sadda")
-           tripList.add(trip)
-
-       } */
-        tripAdaptor.notifyDataSetChanged()
-        tripCursor.close()
-        database.close()
 
         return rootView
+    }
+
+    private fun loadTrips(database: SQLiteDatabase, binding: FragmentHomeBinding) {
+        tripList.clear()
+
+        val query = if (selectedCategory.isNullOrEmpty()) {
+            "SELECT * FROM trip WHERE userId = ? ORDER BY tripId DESC"
+        } else {
+            "SELECT * FROM trip WHERE tripCategory = ? AND userId = ? ORDER BY tripId DESC"
+        }
+
+        val tripCursor = if (selectedCategory.isNullOrEmpty()) {
+            database.rawQuery(query, arrayOf(userId.toString()))  // Tek arrayOf kullanılıyor
+        } else {
+            database.rawQuery(query, arrayOf(selectedCategory, userId.toString()))  // İki parametreyi tek arrayOf ile birleştiriyoruz
+        }
+
+        val tripName = tripCursor.getColumnIndex("tripName")
+        val title = tripCursor.getColumnIndex("title")
+        val description = tripCursor.getColumnIndex("description")
+        val date = tripCursor.getColumnIndex("date")
+        val imagePath = tripCursor.getColumnIndex("imagePath")
+        val tripCategory = tripCursor.getColumnIndex("tripCategory")
+
+
+        if (tripCursor.moveToFirst()) {
+            do {
+                val tripName = tripCursor.getString(tripName)
+                val title = tripCursor.getString(title)
+                val description = tripCursor.getString(description)
+                val resim = tripCursor.getString(imagePath) ?: ""
+                val date = tripCursor.getString(date)
+                val category = tripCursor.getString(tripCategory)
+
+                val firstImagePath = resim.split(",").getOrElse(0) { "" }
+                val trip = Trip(tripName, title, description, firstImagePath, date, category)
+                tripList.add(trip)
+
+            } while (tripCursor.moveToNext())
+        }
+
+        tripCursor.close()
+        tripAdaptor = TripAdaptor(tripList)
+        binding.recyclerView.adapter = tripAdaptor
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        tripAdaptor.notifyDataSetChanged()
+
     }
 
 
     override fun onDestroyView() {
         super.onDestroyView()
+        val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
+        database.close()
+
         _binding = null
     }
 

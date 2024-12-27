@@ -3009,6 +3009,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable add
+drawable add_icon
 drawable avd_hide_password
 drawable avd_show_password
 drawable baseline_person_24
@@ -3028,6 +3030,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable home
+drawable ic_all
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3322,6 +3325,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id entertainmentButton
 id escape
 id exitUntilCollapsed
 id expand_activities_button
@@ -3339,6 +3343,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id foodButton
 id forever
 id fragment_container
 id fragment_container_view_tag
@@ -3356,6 +3361,7 @@ id groups
 id header_title
 id hide_ime_id
 id hideable
+id historyButton
 id home
 id homeAsUp
 id honorRequest
@@ -3367,10 +3373,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton
-id imageButton2
-id imageButton3
-id imageButton4
 id imageView4
 id immediateStop
 id included
@@ -3456,6 +3458,7 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id name
+id natureButton
 id nav_home
 id nav_profile
 id nav_settings
@@ -3562,6 +3565,7 @@ id selection_type
 id sharedValueSet
 id sharedValueUnset
 id shortcut
+id showAllButton
 id showCustom
 id showHome
 id showTitle
