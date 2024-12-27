@@ -78,6 +78,7 @@ int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f020020
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020021
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 int attr SharedValue 0x7f030000
 int attr SharedValueId 0x7f030001
 int attr actionBarDivider 0x7f030002
@@ -5177,6 +5178,8 @@ int style Widget_MaterialComponents_Tooltip 0x7f120466
 int style Widget_Support_CoordinatorLayout 0x7f120467
 int[] styleable ActionBar { 0x7f030047, 0x7f03004e, 0x7f03004f, 0x7f03013a, 0x7f03013b, 0x7f03013c, 0x7f03013d, 0x7f03013e, 0x7f03013f, 0x7f030168, 0x7f03017b, 0x7f03017c, 0x7f03019c, 0x7f03021e, 0x7f030226, 0x7f03022c, 0x7f03022d, 0x7f030231, 0x7f030242, 0x7f030259, 0x7f0302d6, 0x7f030359, 0x7f03038b, 0x7f030392, 0x7f030393, 0x7f03040b, 0x7f03040f, 0x7f030497, 0x7f0304a5 }
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 int array trip_categories 0x7f030000
@@ -10284,6 +10287,9 @@ int style Widget_MaterialComponents_Tooltip 0x7f130466
 int style Widget_Support_CoordinatorLayout 0x7f130467
 int[] styleable ActionBar { 0x7f040047, 0x7f04004e, 0x7f04004f, 0x7f04013a, 0x7f04013b, 0x7f04013c, 0x7f04013d, 0x7f04013e, 0x7f04013f, 0x7f040168, 0x7f04017b, 0x7f04017c, 0x7f04019c, 0x7f04021e, 0x7f040226, 0x7f04022c, 0x7f04022d, 0x7f040231, 0x7f040242, 0x7f040259, 0x7f0402d6, 0x7f040359, 0x7f04038b, 0x7f040392, 0x7f040393, 0x7f04040b, 0x7f04040f, 0x7f040497, 0x7f0404a5 }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

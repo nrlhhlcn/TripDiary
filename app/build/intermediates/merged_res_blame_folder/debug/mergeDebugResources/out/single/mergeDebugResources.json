@@ -2,6 +2,7 @@
     {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "merged": "com.mutu.tripdiary.app-debug-4:/layout_activity_dashboard.xml.flat",
         "source": "com.mutu.tripdiary.app-main-6:/layout/activity_dashboard.xml"
     },
@@ -136,6 +137,142 @@
     {
         "merged": "com.mutu.tripdiary.app-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "com.mutu.tripdiary.app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
+=======
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_celebration.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\celebration.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.mutu.tripdiary.app-debug-4:/layout_fragment_settings.xml.flat",
+        "source": "com.mutu.tripdiary.app-main-6:/layout/fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\layout_recycler_row.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\recycler_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\baseline_person_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_a.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\a.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\font_miltonian_tattoo_regular.ttf.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\font\\miltonian_tattoo_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_home.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\home.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_user_pp.png.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\user_pp.png"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\fragment_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_nature.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\nature.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\layout_activity_dashboard.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\activity_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\menu_nav_menu.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\menu\\nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_book.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\book.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\drawable_rounded_input.xml.flat",
+        "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\drawable\\rounded_input.xml"
+>>>>>>> Stashed changes
 =======
         "merged": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\hanar\\.gradle\\daemon\\8.9\\com.mutu.tripdiary.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
