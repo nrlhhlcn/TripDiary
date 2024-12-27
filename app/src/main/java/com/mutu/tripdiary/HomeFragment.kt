@@ -59,9 +59,18 @@ class HomeFragment : Fragment() {
 
         // Query to get all trips for the user
         val tripCursor: Cursor = database.rawQuery(
-            "SELECT tripName, title, description, date, imagePath FROM trip WHERE userId = ? ORDER BY tripId DESC",
+            "SELECT tripName, title, description, date, imagePath, tripCategory FROM trip WHERE userId = ? ORDER BY tripId DESC",
             arrayOf(userId.toString())
         )
+<<<<<<< Updated upstream
+=======
+        val trimNameId = tripCursor.getColumnIndex("tripName")
+        val ulkeId = tripCursor.getColumnIndex("title")
+        val aniId = tripCursor.getColumnIndex("description")
+        val resimId = tripCursor.getColumnIndex("imagePath")
+        val dateId = tripCursor.getColumnIndex("date")
+        val catagoryId = tripCursor.getColumnIndex("tripCategory")
+>>>>>>> Stashed changes
 
         // Create a list to hold trip data
         val tripList = mutableListOf<Trip>()
@@ -72,8 +81,32 @@ class HomeFragment : Fragment() {
             val date = tripCursor.getLong(3)
             val imagePath = tripCursor.getString(4)
 
+<<<<<<< Updated upstream
             // Add each trip to the list
             tripList.add(Trip(tripName, description, date, imagePath))
+=======
+            val tripName = tripCursor.getString(trimNameId)
+            val title = tripCursor.getString(ulkeId)
+
+            val ani = tripCursor.getString(aniId)
+            val resim=tripCursor.getString(resimId)
+            val date=tripCursor.getString(dateId)
+            val catagory = tripCursor.getString(catagoryId)
+
+            val firstImagePath = resim.split(",").getOrElse(0) { "" }
+
+            if (firstImagePath.isNotEmpty()) {
+                println("İlk görsel yolu: $firstImagePath")
+            } else {
+                println("Görsel yolu mevcut değil.")
+            }
+
+
+            val  trip=Trip(tripName,title,ani,firstImagePath,date,catagory)
+            println("sadda")
+            tripList.add(trip)
+
+>>>>>>> Stashed changes
         }
 
         // Set up RecyclerView with the adapter
