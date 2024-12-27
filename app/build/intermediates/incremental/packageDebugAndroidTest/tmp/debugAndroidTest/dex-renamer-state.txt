@@ -1,7 +1,7 @@
-#Thu Dec 19 14:19:50 TRT 2024
-base.0=C\:\\Users\\Umutl\\Belgeler\\GitHub\\TripDiary\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
-base.1=C\:\\Users\\Umutl\\Belgeler\\GitHub\\TripDiary\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
-base.2=C\:\\Users\\Umutl\\Belgeler\\GitHub\\TripDiary\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\12\\classes.dex
+#Fri Dec 27 10:38:15 TRT 2024
+base.0=C\:\\Users\\nurul\\OneDrive\\Desktop\\Trip\\TripDiary\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+base.1=C\:\\Users\\nurul\\OneDrive\\Desktop\\Trip\\TripDiary\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.2=C\:\\Users\\nurul\\OneDrive\\Desktop\\Trip\\TripDiary\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\12\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=12/classes.dex

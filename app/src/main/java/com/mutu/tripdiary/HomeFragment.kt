@@ -1,25 +1,23 @@
 package com.mutu.tripdiary
 
 import android.content.Context
-import android.content.pm.PackageManager
 import android.database.Cursor
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
-import java.io.File
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.mutu.tripdiary.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
+    private var _binding: FragmentHomeBinding? = null
+    private val binding get() = _binding!!
+
     private var userId: Int = -1
+    private lateinit var tripAdaptor: TripAdaptor
+    private var tripList: ArrayList<Trip> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,65 +29,78 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Fragment layout'unu şişiriyoruz
-        val rootView = inflater.inflate(R.layout.fragment_home, container, false)
+    ): View {
+        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        val rootView = binding.root
 
-        // Kullanıcı ID'sine göre veritabanından kullanıcı adını al
         val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
+
+        // Kullanıcı adını al
         val userCursor: Cursor = database.rawQuery(
             "SELECT name FROM user WHERE id = ?",
             arrayOf(userId.toString())
         )
-
-        val welcomeTextView: TextView = rootView.findViewById(R.id.welcomeText) // Hoşgeldin yazısı için TextView
-
         if (userCursor.moveToFirst()) {
-            val userName = userCursor.getString(0) // Kullanıcı adını al
-            welcomeTextView.text = "Hoşgeldin $userName" // Hoşgeldin mesajını ayarla
+            val userName = userCursor.getString(0)
+            binding.welcomeText.text = "Hoşgeldin $userName"
         } else {
-            welcomeTextView.text = "Hoşgeldin Kullanıcı" // Eğer kullanıcı adı bulunamazsa varsayılan mesaj
+            binding.welcomeText.text = "Hoşgeldin Kullanıcı"
         }
+        userCursor.close()
 
-        userCursor.close() // Cursor'ı kapat
+        // RecyclerView ve TripAdaptor
+        tripAdaptor = TripAdaptor(tripList)
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerView.adapter = tripAdaptor
 
-        // Kullanıcı ID'sine göre veritabanından gezi bilgilerini al
+        // Gezi bilgilerini al ve listeye ekle
         val tripCursor: Cursor = database.rawQuery(
-            "SELECT tripName, title, description, date, imagePath FROM trip WHERE userId = ? ORDER BY tripId DESC LIMIT 1",
+            "SELECT tripName, title, description, date, imagePath FROM trip WHERE userId = ? ORDER BY tripId DESC",
             arrayOf(userId.toString())
         )
+        val trimNameId = tripCursor.getColumnIndex("tripName")
+        val ulkeId = tripCursor.getColumnIndex("title")
+        val aniId = tripCursor.getColumnIndex("description")
+        val resimId = tripCursor.getColumnIndex("imagePath")
+        val dateId = tripCursor.getColumnIndex("date")
 
-        // Gezi bilgilerini göster
-        if (tripCursor.moveToFirst()) {
-            val tripName = tripCursor.getString(0)
-            val description = tripCursor.getString(2)
-            val date = tripCursor.getLong(3)
-            val imagePath = tripCursor.getString(4)
+        println("deneme")
+        while (tripCursor.moveToNext()) {
 
-            val cardTitle: TextView = rootView.findViewById(R.id.cardTitle)
-            val cardDescription: TextView = rootView.findViewById(R.id.cardDescription)
-            val cardDate: TextView = rootView.findViewById(R.id.cardDate)
-            val cardImage: ImageView = rootView.findViewById(R.id.cardImage)
+            val tripName = tripCursor.getString(trimNameId)
+            val title = tripCursor.getString(ulkeId)
 
-            cardTitle.text = tripName
-            cardDescription.text = description
-            cardDate.text = "Tarih: ${java.text.SimpleDateFormat("dd MMMM yyyy").format(date)}"
+            val ani = tripCursor.getString(aniId)
+            val resim=tripCursor.getString(resimId)
+            val date=tripCursor.getString(dateId)
 
-            val file = File(imagePath)
-            if (file.exists()) {
-                val imageUri = Uri.fromFile(file)
-                Glide.with(requireContext())
-                    .load(imageUri)
-                    .into(cardImage)
+            val firstImagePath = resim.split(",").getOrElse(0) { "" }
+
+            if (firstImagePath.isNotEmpty()) {
+                println("İlk görsel yolu: $firstImagePath")
             } else {
-                Toast.makeText(context, "Dosya bulunamadı: $imagePath", Toast.LENGTH_SHORT).show()
+                println("Görsel yolu mevcut değil.")
             }
-        }
 
-        tripCursor.close() // Cursor'ı kapat
-        database.close() // Veritabanını kapat
+
+            val  trip=Trip(tripName,title,ani,firstImagePath,date)
+            println("sadda")
+            tripList.add(trip)
+
+        }
+        tripAdaptor.notifyDataSetChanged()
+        tripCursor.close()
+        database.close()
+
+        // Liste güncelle
+        tripAdaptor.notifyDataSetChanged()
 
         return rootView
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
     companion object {
@@ -104,4 +115,3 @@ class HomeFragment : Fragment() {
             }
     }
 }
-

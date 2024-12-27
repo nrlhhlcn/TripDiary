@@ -3240,7 +3240,6 @@ id cardDate
 id cardDescription
 id cardImage
 id cardTitle
-id cardView1
 id carryVelocity
 id center
 id centerCrop
@@ -3520,6 +3519,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id registterClick
 id repeatPassword
 id report_drawn
@@ -3645,6 +3645,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tripCard
+id tripDateEditText
 id tripDescriptionEditText
 id tripNameEditText
 id tripTitleEditText
@@ -3788,7 +3790,6 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_ana_sayfa
 layout activity_dashboard
 layout activity_main
 layout activity_register
@@ -3870,6 +3871,7 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycler_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
