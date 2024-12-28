@@ -166,6 +166,7 @@ class SettingsFragment : Fragment() {
             stmt.bindString(7, tripCategory)
             stmt.executeInsert()
 
+
             Toast.makeText(requireContext(), "Trip kaydedildi", Toast.LENGTH_LONG).show()
         } catch (e: Exception) {
             e.printStackTrace()

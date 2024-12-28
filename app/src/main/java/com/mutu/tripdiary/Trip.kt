@@ -1,6 +1,7 @@
 package com.mutu.tripdiary
 
 import android.graphics.Bitmap
+import java.io.Serializable
 
 class Trip(
     val tripName: String,
@@ -9,4 +10,4 @@ class Trip(
     val imagePath:String,
     val date:String,
     val tripCategory: String
-)
+):Serializable

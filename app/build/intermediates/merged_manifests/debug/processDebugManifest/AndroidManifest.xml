@@ -31,6 +31,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.TripDiary" >
         <activity
+            android:name="com.mutu.tripdiary.Detaylar"
+            android:exported="false" />
+        <activity
             android:name="com.mutu.tripdiary.DashboardActivity"
             android:exported="false" />
         <activity

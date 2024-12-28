@@ -26,24 +26,25 @@ class TripAdaptor(val tripList:ArrayList<Trip>): RecyclerView.Adapter<TripAdapto
 
         // Görseli yükle
         val imagePath = tripList[position].imagePath
+        println(imagePath)
         if (imagePath.isNotEmpty()) {
-            println("100000000000000000")
-            println(imagePath)
+            val firstImagePath = imagePath.split(",")[0] // Sadece ilk resmi al
             Glide.with(holder.binding.cardImage.context)
-                .load(File(imagePath))
+                .load(File(firstImagePath))
                 .into(holder.binding.cardImage)
-            println("200000000000000000000000")
-        } else {
+        }
+        else {
             // Eğer bir varsayılan resim göstermek istiyorsanız
             holder.binding.cardImage.setImageResource(R.drawable.user_pp)
         }
 
 
         holder.itemView.setOnClickListener{
-            /* val intent= Intent(holder.itemView.context,DetaySayfasi::class.java)
+             val intent= Intent(holder.itemView.context,Detaylar::class.java)
+             intent.putExtra("user",tripList[position])
+            println(tripList[position].imagePath)
 
-
-            holder.itemView.context.startActivity(intent)*/
+            holder.itemView.context.startActivity(intent)
         }
     }
 

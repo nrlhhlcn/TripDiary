@@ -114,9 +114,8 @@ class HomeFragment : Fragment() {
                 val category = tripCursor.getString(tripCategory)
 
                 // Görsel yolu kontrolü
-                val firstImagePath = resim.split(",").getOrElse(0) { "" }
 
-                val trip = Trip(tripName, title, ani, firstImagePath, date, category)
+                val trip = Trip(tripName, title, ani, resim, date, category)
                 tripList.add(trip)
 
             } while (tripCursor.moveToNext())
@@ -158,8 +157,8 @@ class HomeFragment : Fragment() {
                 val date = tripCursor.getString(date)
                 val category = tripCursor.getString(tripCategory)
 
-                val firstImagePath = resim.split(",").getOrElse(0) { "" }
-                val trip = Trip(tripName, title, description, firstImagePath, date, category)
+
+                val trip = Trip(tripName, title, description, resim, date, category)
                 tripList.add(trip)
 
             } while (tripCursor.moveToNext())
