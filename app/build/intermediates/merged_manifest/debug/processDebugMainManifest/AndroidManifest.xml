@@ -37,6 +37,9 @@
             android:name="com.mutu.tripdiary.DashboardActivity"
             android:exported="false" />
         <activity
+            android:name="com.mutu.tripdiary.SettingsActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
             android:name="com.mutu.tripdiary.AnaSayfa"
             android:exported="false" />
         <activity

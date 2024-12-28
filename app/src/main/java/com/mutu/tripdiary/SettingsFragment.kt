@@ -1,12 +1,14 @@
 package com.mutu.tripdiary
 
-import android.app.Activity.RESULT_OK
+import android.app.DatePickerDialog
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
+import android.icu.util.Calendar
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -22,8 +24,18 @@ class SettingsFragment : Fragment() {
 
     private var userId: Int = -1
     private lateinit var binding: FragmentSettingsBinding
-
     private val imageFilePaths = mutableListOf<String>()
+
+    // Çoklu resim seçimi için ActivityResultLauncher
+    private val selectImagesLauncher =
+        registerForActivityResult(ActivityResultContracts.GetMultipleContents()) { uris ->
+            if (uris.isNotEmpty()) {
+                uris.forEach { uri ->
+                    imageFilePaths.add(saveImageToInternalStorage(uri))
+                }
+                Toast.makeText(requireContext(), "Resimler kaydedildi", Toast.LENGTH_SHORT).show()
+            }
+        }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,7 +60,6 @@ class SettingsFragment : Fragment() {
         // Veritabanı işlemleri (Tabloyu oluşturuyoruz)
         val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
 
-        // Trip tablosu oluşturuluyor
         database.execSQL(
             """CREATE TABLE IF NOT EXISTS trip(
                 tripId INTEGER PRIMARY KEY, 
@@ -61,14 +72,6 @@ class SettingsFragment : Fragment() {
                 tripCategory VARCHAR,
                 FOREIGN KEY(userId) REFERENCES user(id))"""
         )
-        try {
-            database.execSQL("ALTER TABLE trip ADD COLUMN tripCategory VARCHAR")
-        } catch (e: Exception) {
-            if (!e.message?.contains("duplicate column name", true)!!) {
-                throw e
-            }
-            e.printStackTrace()
-        }
 
         // Fotoğraf seçme butonuna tıklama işlemi
         binding.selectImageButton.setOnClickListener {
@@ -81,43 +84,21 @@ class SettingsFragment : Fragment() {
         }
 
         // Silme butonuna tıklama işlemi
-        binding.deleteTripsButton.setOnClickListener {
-            deleteTripsWithNullCategory()
+
+        // Tarih seçici açma
+        binding.tripDateEditText.setOnClickListener {
+            openDatePicker()
         }
 
         return binding.root
     }
 
-    // Fotoğraf seçme işlemi
+    // Çoklu resim seçme işlemi
     private fun selectImage() {
-        val intent = Intent(Intent.ACTION_PICK)
-        intent.type = "image/*"
-        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true) // Birden fazla fotoğraf seçmeye izin ver
-        startActivityForResult(intent, IMAGE_REQUEST_CODE)
+        selectImagesLauncher.launch("image/*")
     }
 
-    // Seçilen fotoğrafın içeriğiyle işlem yapma
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == IMAGE_REQUEST_CODE && resultCode == RESULT_OK) {
-            data?.let { intent ->
-                val clipData = intent.clipData
-                if (clipData != null) {
-                    // Çoklu fotoğraf seçildiğinde her birini kaydet
-                    for (i in 0 until clipData.itemCount) {
-                        val imageUri = clipData.getItemAt(i).uri
-                        imageFilePaths.add(saveImageToInternalStorage(imageUri))
-                    }
-                } else {
-                    // Tek bir fotoğraf seçildiğinde
-                    intent.data?.let { uri ->
-                        imageFilePaths.add(saveImageToInternalStorage(uri))
-                    }
-                }
-            }
-            Toast.makeText(requireContext(), "Resimler kaydedildi", Toast.LENGTH_SHORT).show()
-        }
-    }
+    // Seçilen resimleri kaydetme işlemi
     private fun saveImageToInternalStorage(uri: Uri): String {
         return try {
             val bitmap = MediaStore.Images.Media.getBitmap(requireActivity().contentResolver, uri)
@@ -144,18 +125,25 @@ class SettingsFragment : Fragment() {
         val currentDate = binding.tripDateEditText.text.toString()
         val tripCategory = binding.tripCategorySpinner.selectedItem.toString()
 
+        // Boş alan kontrolü
         if (tripName.isEmpty() || title.isEmpty() || description.isEmpty() || currentDate.isEmpty()) {
             Toast.makeText(requireContext(), "Tüm alanları doldurunuz", Toast.LENGTH_SHORT).show()
             return
         }
 
-        val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
+        // Açıklama için minimum karakter kontrolü
+        if (description.length < 100) {
+            Toast.makeText(requireContext(), "Açıklama en az 100 karakter olmalıdır", Toast.LENGTH_SHORT).show()
+            return
+        }
 
+        val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
+        database.beginTransaction()
         try {
             val imagePathsString = imageFilePaths.joinToString(",") // Fotoğraf yollarını virgülle ayır
 
-            val sql = """INSERT INTO trip (userId, tripName, title, description, imagePath,date,tripCategory) 
-                         VALUES (?, ?, ?, ?, ?, ?, ?)"""
+            val sql = """INSERT INTO trip (userId, tripName, title, description, imagePath, date, tripCategory) 
+                     VALUES (?, ?, ?, ?, ?, ?, ?)"""
             val stmt = database.compileStatement(sql)
             stmt.bindLong(1, userId.toLong())
             stmt.bindString(2, tripName)
@@ -166,30 +154,46 @@ class SettingsFragment : Fragment() {
             stmt.bindString(7, tripCategory)
             stmt.executeInsert()
 
-
+            database.setTransactionSuccessful()
             Toast.makeText(requireContext(), "Trip kaydedildi", Toast.LENGTH_LONG).show()
         } catch (e: Exception) {
             e.printStackTrace()
             Toast.makeText(requireContext(), "Bir hata oluştu", Toast.LENGTH_LONG).show()
+        } finally {
+            database.endTransaction()
+        }
+    }
+
+    // Tarih seçici açma işlemi
+    private fun openDatePicker() {
+        val calendar = Calendar.getInstance()
+        val year = calendar.get(Calendar.YEAR)
+        val month = calendar.get(Calendar.MONTH)
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+        val datePickerDialog = DatePickerDialog(
+            requireContext(),
+            { _, selectedYear, selectedMonth, selectedDay ->
+                val date = String.format("%02d/%02d/%04d", selectedDay, selectedMonth + 1, selectedYear)
+                binding.tripDateEditText.text = date // Seçilen tarihi TextView'e yazdır
+            },
+            year, month, day
+        )
+        datePickerDialog.show()
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.tripDateEdit.setOnClickListener {
+            openDatePicker()
         }
     }
 
     // tripCategory null olan verileri silme
-    private fun deleteTripsWithNullCategory() {
-        val database = requireActivity().openOrCreateDatabase("TripDiary", Context.MODE_PRIVATE, null)
 
-        try {
-            val rowsDeleted = database.delete("trip", "tripCategory IS NULL", null)
-            Toast.makeText(requireContext(), "$rowsDeleted kayıt silindi", Toast.LENGTH_SHORT).show()
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Toast.makeText(requireContext(), "Silme işlemi sırasında bir hata oluştu", Toast.LENGTH_LONG).show()
-        }
-    }
 
     companion object {
         private const val ARG_USER_ID = "user_id"
-        private const val IMAGE_REQUEST_CODE = 1
 
         @JvmStatic
         fun newInstance(userId: Int) =

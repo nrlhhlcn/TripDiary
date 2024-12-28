@@ -3024,6 +3024,7 @@ int drawable btn_radio_on_mtrl 0x7f080085
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f080086
 int drawable buyuk 0x7f080087
 int drawable celebration 0x7f080088
+int drawable clock 0x7f0800f6
 int drawable design_fab_background 0x7f080089
 int drawable design_ic_visibility 0x7f08008a
 int drawable design_ic_visibility_off 0x7f08008b
@@ -3289,7 +3290,6 @@ int id decelerate 0x7f0a0097
 int id decelerateAndComplete 0x7f0a0098
 int id decor_content_parent 0x7f0a0099
 int id default_activity_button 0x7f0a009a
-int id deleteTripsButton 0x7f0a009b
 int id deltaRelative 0x7f0a009c
 int id dependency_ordering 0x7f0a009d
 int id design_bottom_sheet 0x7f0a009e
@@ -3662,6 +3662,7 @@ int id transition_transform 0x7f0a020c
 int id triangle 0x7f0a020d
 int id tripCard 0x7f0a020e
 int id tripCategorySpinner 0x7f0a020f
+int id tripDateEdit 0x7f0a0232
 int id tripDateEditText 0x7f0a0210
 int id tripDescriptionEditText 0x7f0a0211
 int id tripInfoText 0x7f0a0212

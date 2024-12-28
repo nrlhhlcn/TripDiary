@@ -19,6 +19,7 @@ drawable baseline_person_24
 drawable book
 drawable buyuk
 drawable celebration
+drawable clock
 drawable home
 drawable ic_all
 drawable ic_launcher_background
@@ -40,7 +41,6 @@ id cardDescription
 id cardImage
 id cardTitle
 id checkBox
-id deleteTripsButton
 id email
 id entertainmentButton
 id foodButton
@@ -76,6 +76,7 @@ id textView2
 id textView3
 id tripCard
 id tripCategorySpinner
+id tripDateEdit
 id tripDateEditText
 id tripDescriptionEditText
 id tripInfoText

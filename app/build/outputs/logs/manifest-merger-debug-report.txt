@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [androidx.databinding:viewbinding:8.7.2] C:\Users\nurul\.gradle\caches\8.9\transforms\f88b6f9d0720249d0ba30acfbac5367e\transformed\viewbinding-8.7.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\nurul\.gradle\caches\8.9\transforms\9141fd2973b8c6591d3facf5af8cb888\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\nurul\.gradle\caches\8.9\transforms\4e60fc8980ee2ab4ed7a8ad14684f27c\transformed\constraintlayout-2.2.0\AndroidManifest.xml:2:1-9:12
@@ -72,8 +72,8 @@ ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:6:22-78
 application
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:8:5-39:19
-INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:8:5-39:19
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:8:5-43:19
+INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:8:5-43:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\nurul\.gradle\caches\8.9\transforms\9141fd2973b8c6591d3facf5af8cb888\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\nurul\.gradle\caches\8.9\transforms\9141fd2973b8c6591d3facf5af8cb888\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.0] C:\Users\nurul\.gradle\caches\8.9\transforms\4e60fc8980ee2ab4ed7a8ad14684f27c\transformed\constraintlayout-2.2.0\AndroidManifest.xml:7:5-20
@@ -126,34 +126,40 @@ ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidMa
 		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
 		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:22:13-46
+activity#com.mutu.tripdiary.SettingsActivity
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:24:9-26:58
+	android:windowSoftInputMode
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:26:13-55
+	android:name
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:25:13-45
 activity#com.mutu.tripdiary.AnaSayfa
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:24:9-26:40
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:25:13-37
-activity#com.mutu.tripdiary.RegisterActivity
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:27:9-29:40
-	android:exported
 		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:29:13-37
-	android:name
-		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:28:13-45
-activity#com.mutu.tripdiary.MainActivity
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:30:9-38:20
+activity#com.mutu.tripdiary.RegisterActivity
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:31:9-33:40
 	android:exported
-		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:32:13-36
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:31:13-41
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:32:13-45
+activity#com.mutu.tripdiary.MainActivity
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:34:9-42:20
+	android:exported
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:36:13-36
+	android:name
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:35:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:37:13-41:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:38:17-69
 	android:name
-		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:38:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:40:17-77
 	android:name
-		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml:40:27-74
 uses-sdk
 INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\nurul\OneDrive\Desktop\Trip\TripDiary\app\src\main\AndroidManifest.xml

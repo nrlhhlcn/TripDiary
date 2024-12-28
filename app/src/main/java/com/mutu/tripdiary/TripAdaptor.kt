@@ -20,9 +20,17 @@ class TripAdaptor(val tripList:ArrayList<Trip>): RecyclerView.Adapter<TripAdapto
     override fun getItemCount(): Int {
         return  tripList.size
     }
+    private fun getShortenedDescription(description: String): String {
+        return if (description.length > 100) {
+            description.substring(0, 100) + "..."
+        } else {
+            description
+        }
+    }
     override fun onBindViewHolder(holder: TripHolder, position: Int) {
         holder.binding.cardTitle.text = tripList[position].tripName
-        holder.binding.cardDescription.text = tripList[position].ani
+        holder.binding.cardDescription.text = getShortenedDescription(tripList[position].ani)
+
 
         // Görseli yükle
         val imagePath = tripList[position].imagePath

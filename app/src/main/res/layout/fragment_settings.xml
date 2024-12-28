@@ -11,13 +11,28 @@
         android:layout_height="match_parent"
         android:backgroundTint="#BAD9F2">
 
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TripDiary"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
         <ScrollView
             android:id="@+id/scrollView2"
-            android:layout_width="427dp"
-            android:layout_height="600dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -43,14 +58,27 @@
                     android:hint="Başlık"
                     android:padding="12dp" />
 
-                <EditText
-                    android:id="@+id/tripDateEditText"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="12dp"
-                    android:backgroundTint="@color/teal_200"
-                    android:hint="Tarih"
-                    android:padding="12dp" />
+                    android:layout_height="70dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                    <ImageView
+                        android:id="@+id/tripDateEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/clock"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/tripDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="8dp"
+                        android:text="Tarih Seçilmedi"
+                        android:gravity="center_vertical" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/tripDescriptionEditText"
@@ -80,41 +108,21 @@
                     android:layout_height="82dp">
 
                     <Button
-                        android:id="@+id/deleteTripsButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginBottom="10dp"
-                        android:paddingHorizontal="20dp"
-                        android:text="Sil"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent" />
-
-                    <Button
                         android:id="@+id/saveTripButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
+                        android:layout_marginStart="144dp"
+                        android:layout_marginTop="16dp"
                         android:paddingHorizontal="20dp"
                         android:text="Kaydet"
-                        app:layout_constraintBottom_toBottomOf="@+id/deleteTripsButton"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
             </LinearLayout>
         </ScrollView>
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TripDiary"
-            android:textSize="34sp"
-            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </FrameLayout>

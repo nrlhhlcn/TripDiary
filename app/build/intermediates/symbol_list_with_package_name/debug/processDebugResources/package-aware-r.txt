@@ -3025,6 +3025,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable buyuk
 drawable celebration
+drawable clock
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -3290,7 +3291,6 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
-id deleteTripsButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3663,6 +3663,7 @@ id transition_transform
 id triangle
 id tripCard
 id tripCategorySpinner
+id tripDateEdit
 id tripDateEditText
 id tripDescriptionEditText
 id tripInfoText
