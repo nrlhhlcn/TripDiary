@@ -1,90 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:onClick="btn_logout"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:paddingTop="30dp"
-    android:weightSum="1">
+    android:fillViewport="true">
 
-    <!-- Profil Başlığı -->
-    <TextView
-        android:id="@+id/profile_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-medium"
-        android:paddingBottom="24dp"
-        android:text="Profilim"
-        android:textColor="@android:color/black"
-        android:textSize="24sp" />
-
-    <!-- Ad Soyad -->
-    <EditText
-        android:id="@+id/profile_name"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/rounded_input"
-        android:hint="Ad Soyad"
-        android:padding="12dp"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:paddingTop="30dp">
 
-    <!-- Email -->
+        <!-- Profil Başlığı -->
+        <TextView
+            android:id="@+id/profile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="24dp"
+            android:text="Profilim"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
 
-    <!-- Kullanıcı Adı -->
+        <!-- Ad Soyad -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ad Soyad"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_input2"
+            android:hint="Ad Soyad"
+            android:focusable="false"
+            android:editable="false"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
 
-    <!-- Bilgileri Güncelle Butonu -->
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_input2"
+            android:hint="Email"
+            android:focusable="false"
+            android:editable="false"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
 
-    <EditText
-        android:id="@+id/profile_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/rounded_input"
-        android:hint="Email"
-        android:padding="12dp"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        <!-- Kullanıcı Adı -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı Adı"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/profile_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/rounded_input2"
+            android:hint="Kullanıcı Adı"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
 
-    <EditText
-        android:id="@+id/profile_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/rounded_input"
-        android:hint="Kullanıcı Adı"
-        android:padding="12dp"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        <!-- Şifre Değiştir -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yeni Şifre"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+        <EditText
+            android:id="@+id/profile_new_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_input2"
+            android:hint="Yeni Şifre"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/btn_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/teal_700"
+            android:padding="12dp"
+            android:text="Şifreyi Güncelle"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/btn_update"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
-        android:background="@color/teal_700"
-        android:padding="12dp"
-        android:text="Bilgileri Güncelle"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
+        <!-- Bilgileri Güncelle -->
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/teal_700"
+            android:padding="12dp"
+            android:text="Bilgileri Güncelle"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/btn_logout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
-        android:background="@color/teal_700"
-        android:padding="12dp"
-        android:text="Çıkış yap"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
-
-
-
-</LinearLayout>
+        <!-- Çıkış Yap -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_700"
+            android:padding="12dp"
+            android:text="Çıkış Yap"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

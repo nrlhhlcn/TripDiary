@@ -29,9 +29,11 @@ drawable left
 drawable nature
 drawable right
 drawable rounded_input
+drawable rounded_input2
 drawable user_pp
 font miltonian_tattoo_regular
 id bottom_navigation
+id btn_change_password
 id btn_logout
 id btn_update
 id button2
@@ -61,6 +63,7 @@ id nav_settings
 id password
 id profile_email
 id profile_name
+id profile_new_password
 id profile_title
 id profile_username
 id recyclerView
