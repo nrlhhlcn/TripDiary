@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -30,9 +29,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button button3;
 
   @NonNull
-  public final CheckBox checkBox;
-
-  @NonNull
   public final ImageView imageView4;
 
   @NonNull
@@ -48,13 +44,11 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView textView;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button button2,
-      @NonNull Button button3, @NonNull CheckBox checkBox, @NonNull ImageView imageView4,
-      @NonNull EditText loginEmail, @NonNull EditText loginPassword, @NonNull ConstraintLayout main,
-      @NonNull TextView textView) {
+      @NonNull Button button3, @NonNull ImageView imageView4, @NonNull EditText loginEmail,
+      @NonNull EditText loginPassword, @NonNull ConstraintLayout main, @NonNull TextView textView) {
     this.rootView = rootView;
     this.button2 = button2;
     this.button3 = button3;
-    this.checkBox = checkBox;
     this.imageView4 = imageView4;
     this.loginEmail = loginEmail;
     this.loginPassword = loginPassword;
@@ -101,12 +95,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.checkBox;
-      CheckBox checkBox = ViewBindings.findChildViewById(rootView, id);
-      if (checkBox == null) {
-        break missingId;
-      }
-
       id = R.id.imageView4;
       ImageView imageView4 = ViewBindings.findChildViewById(rootView, id);
       if (imageView4 == null) {
@@ -133,8 +121,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, button2, button3, checkBox,
-          imageView4, loginEmail, loginPassword, main, textView);
+      return new ActivityMainBinding((ConstraintLayout) rootView, button2, button3, imageView4,
+          loginEmail, loginPassword, main, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -28,8 +28,10 @@ class TripAdaptor(val tripList:ArrayList<Trip>): RecyclerView.Adapter<TripAdapto
         }
     }
     override fun onBindViewHolder(holder: TripHolder, position: Int) {
-        holder.binding.cardTitle.text = tripList[position].tripName
-        holder.binding.cardDescription.text = getShortenedDescription(tripList[position].ani)
+        holder.binding.cardTitle.text = tripList[position].tripName.uppercase()
+        holder.binding.cardDate.text=tripList[position].date.uppercase()
+
+        holder.binding.cardDescription.text = getShortenedDescription(tripList[position].ani.capitalize())
 
 
         // Görseli yükle
