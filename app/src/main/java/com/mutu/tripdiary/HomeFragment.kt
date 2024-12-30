@@ -146,7 +146,7 @@ class HomeFragment : Fragment() {
         val date = tripCursor.getColumnIndex("date")
         val imagePath = tripCursor.getColumnIndex("imagePath")
         val tripCategory = tripCursor.getColumnIndex("tripCategory")
-
+        val tripid = tripCursor.getColumnIndex("tripId")
 
         if (tripCursor.moveToFirst()) {
             do {
@@ -156,9 +156,10 @@ class HomeFragment : Fragment() {
                 val resim = tripCursor.getString(imagePath) ?: ""
                 val date = tripCursor.getString(date)
                 val category = tripCursor.getString(tripCategory)
+                val tripid = tripCursor.getString(tripid)
 
 
-                val trip = Trip(tripName, title, description, resim, date, category)
+                val trip = Trip(tripid,tripName, title, description, resim, date, category)
                 tripList.add(trip)
 
             } while (tripCursor.moveToNext())

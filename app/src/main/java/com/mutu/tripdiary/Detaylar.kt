@@ -1,6 +1,7 @@
 package com.mutu.tripdiary
 
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ScrollView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,18 +33,88 @@ class Detaylar : AppCompatActivity() {
 
         // `trip` nesnesini intent'ten alıyoruz
         trip = intent.getSerializableExtra("user") as Trip
-        binding.tripNameText.text = trip.tripName
-        binding.tripTarihText.text = trip.date
+
+        binding.tripNameText.setText(trip.tripName)
+        binding.tripTarihText.setText(trip.date)
         binding.tripKategoriText.text = trip.tripCategory
-        binding.tripInfoText.text = trip.ani
+        binding.tripInfoText.setText(trip.ani)
+
 
         // İlk resmi yükle
+
+        setEditTextEnabled(false)
 
         val imagePaths = trip.imagePath.split(",")
         println(imagePaths)// Tüm resim yollarını listeye dönüştür
         Glide.with(this)
             .load(File(imagePaths[0])) // İlk resmi göster
             .into(binding.imageView)
+
+        binding.btnEdit.setOnClickListener {
+            if (binding.btnEdit.text == "Düzenle") {
+                setEditTextEnabled(true)
+                binding.btnEdit.text = "Kaydet"
+            } else {
+                updateTripInDatabase()
+                setEditTextEnabled(false)
+                binding.btnEdit.text = "Düzenle"
+            }
+        }
+
+        // Silme butonu
+        binding.btnDelete.setOnClickListener {
+            deleteTripFromDatabase()
+        }
+    }
+
+    private fun setEditTextEnabled(isEnabled: Boolean) {
+        binding.tripNameText.isFocusable = isEnabled
+        binding.tripNameText.isFocusableInTouchMode = isEnabled
+        binding.tripTarihText.isFocusable = isEnabled
+        binding.tripTarihText.isFocusableInTouchMode = isEnabled
+        binding.tripInfoText.isFocusable = isEnabled
+        binding.tripInfoText.isFocusableInTouchMode = isEnabled
+    }
+
+    private fun updateTripInDatabase() {
+        // Trip nesnesini güncelle
+        val database = this.openOrCreateDatabase("TripDiary", MODE_PRIVATE, null)
+        var tripadi = binding.tripNameText.text
+        var triptarih = binding.tripTarihText.text
+        var tripkatagori= binding.tripKategoriText.text
+        var tripinfo= binding.tripInfoText.text
+
+
+
+        try {
+            database?.execSQL(
+                "UPDATE trip SET tripName = ?,date=?, tripCategory = ?,description = ? WHERE tripId  = ?",
+                arrayOf(tripadi, triptarih.toString(),tripkatagori,tripinfo,trip.tripid)
+            )
+            Toast.makeText(this, "Bilgiler başarıyla güncellendi!", Toast.LENGTH_SHORT).show()
+            val intent= Intent(this,DashboardActivity::class.java)
+            startActivity(intent)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(this, "Bilgiler güncellenirken hata oluştu!", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+
+    private fun deleteTripFromDatabase() {
+        val database = this.openOrCreateDatabase("TripDiary", MODE_PRIVATE, null)
+        try {
+            database?.execSQL(
+                "DELETE FROM trip WHERE tripId =?",
+                arrayOf(trip.tripid)
+            )
+            Toast.makeText(this, "Bilgiler başarıyla Silindi!", Toast.LENGTH_SHORT).show()
+            val intent= Intent(this,DashboardActivity::class.java)
+            startActivity(intent)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Toast.makeText(this, "Bilgiler silinirken hata oluştu!", Toast.LENGTH_SHORT).show()
+        }
     }
 
     fun resimDegistir(view: View) {

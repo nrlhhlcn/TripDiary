@@ -4,6 +4,7 @@ import android.graphics.Bitmap
 import java.io.Serializable
 
 class Trip(
+    val tripid: String,
     val tripName: String,
     val title: String,
     val ani: String,

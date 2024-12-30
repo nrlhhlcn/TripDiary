@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-35:/values-h720dp-v13/values-h720dp-v13.xml",
+            "outputFile": "com.mutu.tripdiary.app-mergeDebugResources-2:/values-h720dp-v13/values-h720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ahmet\\.gradle\\caches\\8.9\\transforms\\805974bfc3395066bf3a90b39aba7795\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
+                    "source": "C:\\Users\\hanar\\.gradle\\caches\\8.9\\transforms\\805974bfc3395066bf3a90b39aba7795\\transformed\\appcompat-1.7.0\\res\\values-h720dp-v13\\values-h720dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Detaylar">
 
-    <TextView
+    <EditText
         android:id="@+id/tripNameText"
         android:layout_width="157dp"
         android:layout_height="63dp"
@@ -53,7 +53,7 @@
         app:layout_constraintVertical_bias="0.514"
         app:srcCompat="@drawable/right" />
 
-    <TextView
+    <EditText
         android:id="@+id/tripTarihText"
         android:layout_width="135dp"
         android:layout_height="41dp"
@@ -74,7 +74,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/tripTarihText" />
 
-    <TextView
+    <EditText
         android:id="@+id/tripInfoText"
         android:layout_width="329dp"
         android:layout_height="181dp"
@@ -84,5 +84,29 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/tripTarihText" />
+
+    <Button
+            android:id="@+id/btnEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Düzenle"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Sil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintWidth_percent="0.45" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

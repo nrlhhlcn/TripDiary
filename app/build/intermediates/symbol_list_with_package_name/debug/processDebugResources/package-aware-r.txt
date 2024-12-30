@@ -3239,6 +3239,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnDelete
+id btnEdit
 id btn_change_password
 id btn_logout
 id btn_update

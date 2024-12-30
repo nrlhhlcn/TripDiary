@@ -33,6 +33,8 @@ drawable rounded_input2
 drawable user_pp
 font miltonian_tattoo_regular
 id bottom_navigation
+id btnDelete
+id btnEdit
 id btn_change_password
 id btn_logout
 id btn_update
