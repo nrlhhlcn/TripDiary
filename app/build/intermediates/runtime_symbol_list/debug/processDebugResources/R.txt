@@ -3262,7 +3262,6 @@ int id center_vertical 0x7f0a007a
 int id chain 0x7f0a007b
 int id chain2 0x7f0a007c
 int id chains 0x7f0a007d
-int id checkBox 0x7f0a007e
 int id checkbox 0x7f0a007f
 int id checked 0x7f0a0080
 int id chronometer 0x7f0a0081

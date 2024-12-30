@@ -44,7 +44,6 @@ id cardDate
 id cardDescription
 id cardImage
 id cardTitle
-id checkBox
 id email
 id entertainmentButton
 id foodButton
